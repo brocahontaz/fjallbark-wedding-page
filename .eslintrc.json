@@ -19,6 +19,7 @@
     "jest"
   ],
   "rules": {
+    "import/extensions": ["error", "never" ],
     "indent": ["error", 2],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-uses-react": "off",
