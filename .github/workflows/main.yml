@@ -28,4 +28,4 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_pwd }}
         local-dir: ./build/
-        server-dir: ./xn--fjllbark-1za.se/public-html/
+        server-dir: ./xn--fjllbark-1za.se/public_html/
