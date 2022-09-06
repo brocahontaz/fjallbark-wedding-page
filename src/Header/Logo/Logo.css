@@ -1,0 +1,15 @@
+.Logo {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainText {
+  font-size: 30px;
+}
+
+.infoText {
+  font-size: 15px;
+}
