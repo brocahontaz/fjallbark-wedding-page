@@ -6,9 +6,11 @@ import Logo from './Logo';
 const links = [
   'hem',
   'story',
-  'plats',
-  'meny',
+  'vigsel',
+  'fest',
+  'mat',
   'info',
+  'foto',
   'RSVP'
 ];
 
