@@ -4,12 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
-.mainText {
-  font-size: 30px;
-}
-
-.infoText {
-  font-size: 15px;
+.Logo img {
+  height: 100%;
 }

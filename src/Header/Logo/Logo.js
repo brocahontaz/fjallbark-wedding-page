@@ -1,10 +1,10 @@
 import './Logo.css';
+import Logotype from '../../assets/img/logo.png';
 
 function Logo() {
   return (
     <div className="Logo">
-      <span className="mainText">Johan & Catarina</span>
-      <span className="infoText">Vallkärra Kyrka 19 November 2022</span>
+      <img src={Logotype} alt="logo" />
     </div>
   );
 }
