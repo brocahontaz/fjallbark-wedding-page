@@ -1,0 +1,4 @@
+.Crew {
+    display: flex;
+    flex-direction: column;
+}

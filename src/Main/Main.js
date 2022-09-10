@@ -4,6 +4,7 @@ import Home from './Home';
 import Story from './Story';
 import Info from './Info';
 import Menu from './Menu';
+import Crew from './Crew';
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <Info />
       <Story />
       <Menu />
+      <Crew />
     </div>
   );
 }
