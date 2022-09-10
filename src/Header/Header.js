@@ -11,7 +11,7 @@ const links = [
   'fest',
   'mat',
   'story',
-  'foto',
+  'crew',
   'RSVP'
 ];
 
