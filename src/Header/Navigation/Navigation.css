@@ -23,6 +23,6 @@
 }
 
 .Navigation .selected {
-  background-color: wheat;
+  background-color: #fbf3fb;
   transition: background 0.5s;
 }
