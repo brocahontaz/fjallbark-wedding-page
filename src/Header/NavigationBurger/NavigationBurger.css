@@ -39,6 +39,7 @@
   cursor: pointer;
   padding: 20px;
   z-index: 11;
+  color: black;
 }
 
 .NavigationBurger .Navbar .nav-link {
