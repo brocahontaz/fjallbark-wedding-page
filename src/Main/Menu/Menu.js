@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
+import './Menu.css';
+
 function Menu() {
   return (
-    <div id="mat">
+    <div className="Menu" id="mat" data-scrollspy>
 
       <h2>Preliminär meny</h2>
       <br />

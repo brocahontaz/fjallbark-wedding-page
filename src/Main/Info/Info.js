@@ -4,7 +4,7 @@ import Event from '../components/Event';
 
 function Info() {
   return (
-    <div className="Info" id="info">
+    <div className="Info" id="info" data-scrollspy>
       <h1>Observera</h1>
       <div>
         Vi vill kunna bjuda många från familj och vänner så därför önskar vi en

@@ -2,7 +2,7 @@ import './Crew.css';
 
 function Crew() {
   return (
-    <div id="crew" className="Crew">
+    <div id="crew" className="Crew" data-scrollspy>
       <h2>Tärnor</h2>
       <span>Jennifer Holst</span>
       <span>Lisa Jakobsson</span>
