@@ -1,6 +1,7 @@
 import './Header.css';
 
 import Navigation from './Navigation';
+import NavigationBurger from './NavigationBurger';
 import Logo from './Logo';
 
 const links = [
@@ -25,6 +26,7 @@ function Header() {
         <Navigation links={firstHalf} />
         <Logo />
         <Navigation links={secondHalf} />
+        <NavigationBurger links={links} />
       </div>
     </div>
   );

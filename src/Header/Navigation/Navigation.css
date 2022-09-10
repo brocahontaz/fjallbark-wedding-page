@@ -26,3 +26,9 @@
   background-color: #fbf3fb;
   transition: background 0.5s;
 }
+
+@media screen and (max-width: 900px) {
+  .Navigation {
+    display: none;
+  }
+}
