@@ -8,6 +8,7 @@ function Navigation({ links }) {
     <div className="Navigation">
       {links.map((link) => (
         <NavHashLink
+          key={`nav-${link}`}
           smooth
           to={`#${link}`}
           className={({ isActive }) => `nav-link${isActive ? ' selected' : ''}`}
