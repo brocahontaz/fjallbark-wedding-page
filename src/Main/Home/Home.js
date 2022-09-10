@@ -2,7 +2,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="Home" id="hem" />
+    <div className="Home" id="hem" data-scrollspy />
   );
 }
 

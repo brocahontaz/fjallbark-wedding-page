@@ -4,7 +4,7 @@ import Event from '../components/Event'
 
 function Info() {
   return (
-    <div className="Info" id="info">
+    <div className="Info" id="info" data-scrollspy>
       <h1>Observera</h1>
       <div>Vi vill kunna bjuda många från familj och vänner så därför önskar vi en <b>kuvertavgift istället för present på vårt bröllop</b>. Det kommer vara 500kr per kuvert och det kommer (förhoppningsvis) bli fantastisk mat under middagen och stor variation av dryck till det, både med och utan alkohol. Ingen återbetalning av kuvertavgiften kan ske vid exempelvis sjukdom/förhinder då allting (och mer därtill) går oavkortat till cateringbolaget, försök håll er friska och krya så ni inte missar denna magiska dag.</div>
       <h1>Preliminär tidsplan</h1>
