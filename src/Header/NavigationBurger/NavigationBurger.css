@@ -1,0 +1,27 @@
+.NavigationBurger {
+  grid-area: nav-right;
+  justify-self: right;
+  margin-right: 40px;
+}
+
+.NavigationBurger .Expandable {
+  display: none;
+}
+
+.NavigationBurger button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Use whatever font-family you want */
+  font-size: 1rem;
+  line-height: 1;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+@media screen and (min-width: 901px) {
+  .NavigationBurger {
+    display: none;
+  }
+}

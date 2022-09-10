@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100px;
-  grid-area: "logo";
+  grid-area: logo;
 }
 
 .Logo img {
