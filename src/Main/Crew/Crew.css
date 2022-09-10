@@ -1,4 +1,6 @@
 .Crew {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background: #fbf3fb;
 }
