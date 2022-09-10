@@ -1,0 +1,8 @@
+.Info {
+  width: 80%;
+  height: 800px;
+  background: #fbf3fb;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
