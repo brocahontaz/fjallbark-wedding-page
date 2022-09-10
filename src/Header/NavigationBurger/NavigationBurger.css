@@ -1,7 +1,7 @@
 .NavigationBurger {
   grid-area: nav-right;
   justify-self: right;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .NavigationBurger .Expandable {
@@ -18,6 +18,8 @@
   line-height: 1;
   background: transparent;
   -webkit-appearance: none;
+  cursor: pointer;
+  padding: 20px;
 }
 
 @media screen and (min-width: 901px) {
