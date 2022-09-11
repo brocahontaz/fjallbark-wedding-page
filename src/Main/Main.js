@@ -11,8 +11,8 @@ function Main() {
     <div className="Main">
       <Home />
       <Info />
-      <Story />
       <Menu />
+      <Story />
       <Crew />
     </div>
   );
