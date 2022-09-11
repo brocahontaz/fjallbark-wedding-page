@@ -1,6 +1,9 @@
 .Crew {
-  display: flex;
-  flex-direction: column;
   height: 800px;
   background: #fbf3fb;
+}
+
+.CrewWrap {
+  display: flex;
+  flex-direction: column;
 }

@@ -5,12 +5,16 @@ import Story from './Story';
 import Info from './Info';
 import Menu from './Menu';
 import Crew from './Crew';
+import Ceremony from './Ceremony';
+import Party from './Party';
 
 function Main() {
   return (
     <div className="Main">
       <Home />
       <Info />
+      <Ceremony />
+      <Party />
       <Menu />
       <Story />
       <Crew />

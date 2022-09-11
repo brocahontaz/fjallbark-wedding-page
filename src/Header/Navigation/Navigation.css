@@ -18,7 +18,7 @@
 }
 
 .Navigation .nav-link:hover:not(.selected) {
-  background: whitesmoke;
+  background: #fdf9fd;
   transition: background 1s;
 }
 
