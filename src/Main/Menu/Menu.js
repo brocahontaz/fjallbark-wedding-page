@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import ContentBlock from '../components/ContentBlock';
 import './Menu.css';
+import Occo from '../../assets/img/occo.png';
 
 function Menu() {
   return (
@@ -8,7 +9,7 @@ function Menu() {
       <div className="Positioner">
         <div className="CoverChecker" id="mat" data-scrollspy />
       </div>
-      <ContentBlock title="Mat" subtitle="Segers Mat">
+      <ContentBlock title="Mat" subtitle="Segers Mat" image={Occo}>
         <h3>Preliminär meny</h3>
         <h4>
           Förrätt

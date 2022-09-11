@@ -18,6 +18,10 @@
   color: #5e3f5e;
 }
 
+.RSVP .ContentBlock .SmallImage img {
+  object-position: 50% 20px;
+}
+
 @media screen and (max-width: 900px) {
   .RSVPForm  {
     display: none;
