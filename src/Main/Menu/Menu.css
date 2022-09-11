@@ -2,6 +2,8 @@
   width: 100%;
   height: 800px;
   background: #fbf3fb;
+  scroll-padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .Menu h2 {
