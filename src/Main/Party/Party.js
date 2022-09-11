@@ -5,7 +5,10 @@ import Bal from '../../assets/img/bal.png';
 
 function Party() {
   return (
-    <div className="Party" id="fest" data-scrollspy>
+    <div className="Party">
+      <div className="Positioner">
+        <div className="CoverChecker" id="fest" data-scrollspy />
+      </div>
       <ContentBlock title="Fest" subtitle="Axelgård" image={Bal} />
     </div>
   );

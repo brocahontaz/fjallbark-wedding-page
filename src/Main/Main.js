@@ -11,7 +11,7 @@ import RSVP from './RSVP';
 
 function Main() {
   return (
-    <div className="Main">
+    <div className="Main" id="Main">
       <Home />
       <Info />
       <Ceremony />

@@ -3,7 +3,10 @@ import ContentBlock from '../components/ContentBlock';
 
 function Crew() {
   return (
-    <div id="crew" className="Crew" data-scrollspy>
+    <div className="Crew">
+      <div className="Positioner">
+        <div className="CoverChecker" id="crew" data-scrollspy />
+      </div>
       <ContentBlock title="Crew" subtitle="Good times">
         <div className="CrewWrap">
           <h3>Tärnor</h3>

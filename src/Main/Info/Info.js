@@ -6,7 +6,10 @@ import Ringbubbel from '../../assets/img/ringbubbel.png';
 
 function Info() {
   return (
-    <div className="Info" id="info" data-scrollspy>
+    <div className="Info">
+      <div className="Positioner">
+        <div className="CoverChecker" id="info" data-scrollspy />
+      </div>
       <ContentBlock title="Information" subtitle="The difference that makes a difference" image={Ringbubbel}>
         <div className="InfoWrap">
           <h3>Observera!</h3>

@@ -4,6 +4,7 @@
   background: #fbf3fb;
   scroll-padding-top: 100px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .Menu h2 {
