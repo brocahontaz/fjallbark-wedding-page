@@ -6,3 +6,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.CrewWrap ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.CrewWrap ul li {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}

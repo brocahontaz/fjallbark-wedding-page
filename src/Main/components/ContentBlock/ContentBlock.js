@@ -1,15 +1,20 @@
 import './ContentBlock.css';
 import PropTypes from 'prop-types';
 
-function ContentBlock({ title, children }) {
+function ContentBlock({
+  title, subtitle, image, children
+}) {
   return (
     <div className="ContentBlock">
       <div className="Content">
-        <h2>{title}</h2>
+        <div className="Title">
+          <h2>{title}</h2>
+          <div>{subtitle}</div>
+        </div>
         {children}
       </div>
       <div className="Image">
-        <img src="" alt="placeholder" />
+        <img src={image} alt={title} />
       </div>
 
     </div>
@@ -18,11 +23,14 @@ function ContentBlock({ title, children }) {
 
 ContentBlock.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
+  image: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
 ContentBlock.defaultProps = {
   title: '',
+  subtitle: '',
   children: null
 };
 

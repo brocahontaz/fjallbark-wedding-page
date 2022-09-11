@@ -4,24 +4,52 @@ import ContentBlock from '../components/ContentBlock';
 function Crew() {
   return (
     <div id="crew" className="Crew" data-scrollspy>
-      <ContentBlock title="Crew">
+      <ContentBlock title="Crew" subtitle="Good times">
         <div className="CrewWrap">
           <h3>Tärnor</h3>
-          <span>Jennifer Holst</span>
-          <span>Lisa Jakobsson</span>
-          <span>Sanna Holmgren</span>
-          <h3>Marshalker</h3>
-          <span>Ulrik Sjölin</span>
-          <span>Daniel Ohlsson</span>
-          <span>Markus Maga</span>
+          <ul>
+            <li>
+              Jennifer Holst
+            </li>
+            <li>
+              Lisa Jakobsson
+            </li>
+            <li>
+              Sanna Holmgren
+            </li>
+          </ul>
+          <h3>Marskalker</h3>
+          <ul>
+            <li>
+              Ulrik Sjölin
+            </li>
+            <li>
+              Daniel Ohlsson
+            </li>
+            <li>
+              Markus Maga
+            </li>
+          </ul>
+
           <h3>Toastmaster och Toastmadame</h3>
-          <span>Elin Hanstorp</span>
-          <span>Felix Rosenlund</span>
+          <ul>
+            <li>
+              Elin Hanstorp
+            </li>
+            <li>
+              Felix Rosenlund
+            </li>
+          </ul>
+
           <h3>Värdpar</h3>
-          <span>Kristoffer Linderman</span>
-          <span>Linnea</span>
-          <h3>DJ</h3>
-          <span>Nicholas Salas</span>
+          <ul>
+            <li>
+              Kristoffer Linderman
+            </li>
+            <li>
+              Linnea Åsberg
+            </li>
+          </ul>
         </div>
       </ContentBlock>
     </div>

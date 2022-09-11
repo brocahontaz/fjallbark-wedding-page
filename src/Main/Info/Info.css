@@ -10,3 +10,12 @@
   display: flex;
   flex-direction: column;
 }
+
+.InfoWrap ul {
+  margin-top: 0px;
+  padding-left: 15px;
+}
+
+.InfoWrap ul li ul {
+  padding-left: 20px;
+}
