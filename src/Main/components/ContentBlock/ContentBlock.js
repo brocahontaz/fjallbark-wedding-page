@@ -4,8 +4,14 @@ import PropTypes from 'prop-types';
 function ContentBlock({ title, children }) {
   return (
     <div className="ContentBlock">
-      <h2>{title}</h2>
-      {children}
+      <div className="Content">
+        <h2>{title}</h2>
+        {children}
+      </div>
+      <div className="Image">
+        <img src="" alt="placeholder" />
+      </div>
+
     </div>
   );
 }

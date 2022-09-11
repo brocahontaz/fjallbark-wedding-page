@@ -6,4 +6,29 @@
   padding-bottom: 40px;
   border-bottom: 4px solid white;
   box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.ContentBlock .Content {
+  padding-right: 40px;
+}
+
+.ContentBlock .Content h2 {
+  font-size: 40px;
+  font-family: Garamond;
+  color: #5e3f5e;
+  text-align: center;  
+}
+
+.ContentBlock .Image {
+  width: 100%;
+  border: 4px solid white;
+}
+
+.ContentBlock .Image img {
+  width: 500px;
+  height: 800px;
+  border: 4px solid white;
 }
