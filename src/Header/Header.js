@@ -24,7 +24,7 @@ function Header() {
     <div className="Header">
       <div className="wrapper">
         <Navigation links={firstHalf} />
-        <Logo />
+        <a href="/" aria-label="refresh"><Logo /></a>
         <Navigation links={secondHalf} />
         <NavigationBurger links={links} />
       </div>

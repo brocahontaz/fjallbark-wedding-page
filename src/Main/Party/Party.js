@@ -5,7 +5,7 @@ import ContentBlock from '../components/ContentBlock';
 function Party() {
   return (
     <div className="Party" id="fest" data-scrollspy>
-      <ContentBlock />
+      <ContentBlock title="Fest" />
     </div>
   );
 }

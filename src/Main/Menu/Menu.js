@@ -6,8 +6,8 @@ function Menu() {
   return (
 
     <div className="Menu" id="mat" data-scrollspy>
-      <ContentBlock>
-        <h2>Preliminär meny</h2>
+      <ContentBlock title="Mat">
+        <h3>Preliminär meny</h3>
         <br />
 
         <span>

@@ -4,7 +4,7 @@ import ContentBlock from '../components/ContentBlock';
 function Crew() {
   return (
     <div id="crew" className="Crew" data-scrollspy>
-      <ContentBlock>
+      <ContentBlock title="Crew">
         <div className="CrewWrap">
           <h2>Tärnor</h2>
           <span>Jennifer Holst</span>
