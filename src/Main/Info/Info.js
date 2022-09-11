@@ -2,11 +2,12 @@
 import './Info.css';
 import Event from '../components/Event';
 import ContentBlock from '../components/ContentBlock';
+import Ringbubbel from '../../assets/img/ringbubbel.png';
 
 function Info() {
   return (
     <div className="Info" id="info" data-scrollspy>
-      <ContentBlock title="Information" subtitle="The difference that makes a difference">
+      <ContentBlock title="Information" subtitle="The difference that makes a difference" image={Ringbubbel}>
         <div className="InfoWrap">
           <h3>Observera!</h3>
           <p>
