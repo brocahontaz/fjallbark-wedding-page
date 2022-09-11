@@ -22,7 +22,7 @@ function App() {
       }
     }, {
       rootMargin: '0px',
-      threshold: '0.5'
+      threshold: '0.6'
     });
     for (let i = 0; i < sections.length; i++) { observer.observe(sections[i]); }
   });
