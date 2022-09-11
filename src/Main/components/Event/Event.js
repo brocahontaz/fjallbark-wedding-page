@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faClock } from '@fortawesome/free-solid-svg-icons';
 import './Event.css';
 
 function Event({
@@ -9,17 +9,22 @@ function Event({
   return (
     <div className="Event">
       <div className="Row">
-        <h4>{thing}</h4>
-        <div />
+        <div className="Thing">
+          <h4>{thing}</h4>
+        </div>
         <div className="Location">
           <span>{location}</span>
-          <FontAwesomeIcon icon={faLocationDot} size="2x" />
+          <FontAwesomeIcon icon={faLocationDot} size="1x" />
         </div>
       </div>
       <div className="Row">
-        <span>{extra}</span>
-        <div />
-        <span className="Time">{time}</span>
+        <div className="ExtraInfo">
+          <span className="italic">{extra}</span>
+        </div>
+        <div className="Time">
+          <span>{time}</span>
+          <FontAwesomeIcon icon={faClock} size="1x" />
+        </div>
       </div>
     </div>
   );

@@ -1,20 +1,60 @@
 .Event {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid white;
+}
+
+.Event:last-of-type {
+  border-bottom: 0;
 }
 
 .Location {
-    justify-self: flex-end;
-    align-items: center;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  padding-left: 10px;
+  border-left: 1px solid white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Location span {
+  margin-right: 10px;
+  font-weight: 700;
 }
 
 .Time {
-    display: flex;
-    justify-content: flex-end;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  padding-left: 10px;
+  border-left: 1px solid white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Time span {
+  margin-right: 10px;
 }
 
 .Row {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Row span.italic {
+  font-style: italic;
+}
+
+.Row .Thing {
+  padding-right: 10px;
+}
+
+.Row .ExtraInfo {
+  padding-right: 20px;
 }
