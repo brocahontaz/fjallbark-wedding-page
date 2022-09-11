@@ -9,7 +9,7 @@ function Event({
   return (
     <div className="Event">
       <div className="Row">
-        <h3>{thing}</h3>
+        <h4>{thing}</h4>
         <div />
         <div className="Location">
           <span>{location}</span>

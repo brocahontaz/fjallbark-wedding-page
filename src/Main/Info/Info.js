@@ -16,7 +16,8 @@ function Info() {
             <b>kuvertavgift istället för present på vårt bröllop</b>
             . Det kommer vara 500kr per kuvert och det kommer (förhoppningsvis) bli fantastisk mat under middagen och stor variation av dryck till det, både med och utan alkohol. Ingen återbetalning av kuvertavgiften kan ske vid exempelvis sjukdom/förhinder då allting (och mer därtill) går oavkortat till cateringbolaget, försök håll er friska och krya så ni inte missar denna magiska dag.
           </div>
-          <h4>Preliminär tidsplan</h4>
+          <h3>Klädkod</h3>
+          <h3>Preliminär tidsplan</h3>
           <Event
             thing="Vigsel"
             location="Vallkärra kyrka"
