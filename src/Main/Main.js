@@ -7,6 +7,7 @@ import Menu from './Menu';
 import Crew from './Crew';
 import Ceremony from './Ceremony';
 import Party from './Party';
+import RSVP from './RSVP';
 
 function Main() {
   return (
@@ -18,6 +19,7 @@ function Main() {
       <Menu />
       <Story />
       <Crew />
+      <RSVP />
     </div>
   );
 }

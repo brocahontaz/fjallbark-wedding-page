@@ -4,23 +4,23 @@ import ContentBlock from '../components/ContentBlock';
 function Crew() {
   return (
     <div id="crew" className="Crew" data-scrollspy>
-      <ContentBlock>
+      <ContentBlock title="Crew">
         <div className="CrewWrap">
-          <h2>Tärnor</h2>
+          <h3>Tärnor</h3>
           <span>Jennifer Holst</span>
           <span>Lisa Jakobsson</span>
           <span>Sanna Holmgren</span>
-          <h2>Marshalker</h2>
+          <h3>Marshalker</h3>
           <span>Ulrik Sjölin</span>
           <span>Daniel Ohlsson</span>
           <span>Markus Maga</span>
-          <h2>Toastmaster och Toastmadame</h2>
+          <h3>Toastmaster och Toastmadame</h3>
           <span>Elin Hanstorp</span>
           <span>Felix Rosenlund</span>
-          <h2>Värdpar</h2>
+          <h3>Värdpar</h3>
           <span>Kristoffer Linderman</span>
           <span>Linnea</span>
-          <h2>DJ</h2>
+          <h3>DJ</h3>
           <span>Nicholas Salas</span>
         </div>
       </ContentBlock>

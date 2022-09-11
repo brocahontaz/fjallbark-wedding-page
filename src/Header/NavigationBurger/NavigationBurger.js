@@ -4,6 +4,8 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 
+import scrollWithOffset from '../utilities/ScrollOffset';
+
 import './NavigationBurger.css';
 
 function NavigationBurger({ links }) {
@@ -31,6 +33,7 @@ function NavigationBurger({ links }) {
             to={`#${link}`}
             className={({ isActive }) => `nav-link${isActive ? ' selected' : ''}`}
             activeClassName="selected"
+            scroll={(el) => scrollWithOffset(el)}
             onClick={() => closeMenu()}
           >
             {link.toUpperCase()}
