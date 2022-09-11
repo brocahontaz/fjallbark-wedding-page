@@ -10,3 +10,25 @@
 .Menu h2 {
   margin-top: 0;
 }
+
+.Menu h4 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.Menu ul li {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.Menu p {
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 import './Crew.css';
 import ContentBlock from '../components/ContentBlock';
+import Flinta from '../../assets/img/orange.png';
 
 function Crew() {
   return (
@@ -7,7 +8,7 @@ function Crew() {
       <div className="Positioner">
         <div className="CoverChecker" id="crew" data-scrollspy />
       </div>
-      <ContentBlock title="Crew" subtitle="Good times">
+      <ContentBlock title="Crew" subtitle="Good times" image={Flinta}>
         <div className="CrewWrap">
           <h3>Tärnor</h3>
           <ul>
