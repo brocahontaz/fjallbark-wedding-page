@@ -17,3 +17,9 @@
   max-height: 800px;
   max-width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .HomeWrap {
+    align-items: flex-start;
+  }
+}

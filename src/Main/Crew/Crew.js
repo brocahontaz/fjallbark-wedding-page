@@ -10,11 +10,14 @@ function Crew() {
       </div>
       <ContentBlock title="Crew" subtitle="Good times" image={Flinta}>
         <div className="CrewWrap">
-          <h3>Tärnor</h3>
+          <h3>Hederstärna</h3>
           <ul>
             <li>
               Jennifer Holst
             </li>
+          </ul>
+          <h4>Tärnor</h4>
+          <ul>
             <li>
               Lisa Jakobsson
             </li>
@@ -22,11 +25,14 @@ function Crew() {
               Sanna Holmgren
             </li>
           </ul>
-          <h3>Marskalker</h3>
+          <h3>Best Man</h3>
           <ul>
             <li>
               Ulrik Sjölin
             </li>
+          </ul>
+          <h4>Marskalker</h4>
+          <ul>
             <li>
               Daniel Ohlsson
             </li>

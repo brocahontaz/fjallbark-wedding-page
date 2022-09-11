@@ -25,7 +25,7 @@ function Info() {
             <b>500kr per kuvert</b>
             ,
             {' '}
-            och det kommer (förhoppningsvis) bli fantastisk mat under middagen. samt stor variation av dryck till det, både med och utan alkohol.
+            och det kommer (förhoppningsvis) bli fantastisk mat under middagen; samt stor variation av dryck till det, både med och utan alkohol.
           </p>
           <p>
             Ingen återbetalning av kuvertavgiften kan ske vid exempelvis sjukdom/förhinder då allting (och mer därtill) går oavkortat till cateringbolaget, försök håll er friska och krya så ni inte missar denna magiska dag.
@@ -41,7 +41,7 @@ function Info() {
             Så, vad innebär detta, egentligen?
           </p>
           <p>
-            Jo! Följande alternativ är okey:
+            Jo! Följande alternativ är okej:
           </p>
           <h5>
             Herrar
@@ -136,6 +136,9 @@ function Info() {
             </li>
           </ul>
           <h3>Preliminär tidsplan</h3>
+          <div className="subtitle">
+            Lördag 19 November 2022
+          </div>
           <Event
             thing="Vigsel"
             location="Vallkärra kyrka"

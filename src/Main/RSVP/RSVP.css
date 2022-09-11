@@ -9,11 +9,22 @@
 .RSVPWrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RSVP a {
+  display: none;
+  color: #5e3f5e;
 }
 
 @media screen and (max-width: 900px) {
   .RSVPForm  {
     display: none;
+  }
+
+  .RSVP a {
+    display: block;
   }
 }
 
