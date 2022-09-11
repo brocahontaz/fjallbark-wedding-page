@@ -4,8 +4,10 @@ import './Menu.css';
 
 function Menu() {
   return (
-
-    <div className="Menu" id="mat" data-scrollspy>
+    <div className="Menu">
+      <div className="Positioner">
+        <div className="CoverChecker" id="mat" data-scrollspy />
+      </div>
       <ContentBlock title="Mat" subtitle="Om nom nom nom">
         <h3>Preliminär meny</h3>
         <br />

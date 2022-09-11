@@ -2,7 +2,11 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="Home" id="hem" data-scrollspy />
+    <div className="Home">
+      <div className="Positioner">
+        <div className="CoverChecker" id="hem" data-scrollspy />
+      </div>
+    </div>
   );
 }
 
