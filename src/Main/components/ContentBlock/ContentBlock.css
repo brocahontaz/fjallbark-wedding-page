@@ -16,8 +16,14 @@
   font-size: 25px;
   font-family: Garamond;
   color: #5e3f5e;
-  margin-bottom: 10px;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.ContentBlock h3:first-of-type {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ContentBlock h4 {
