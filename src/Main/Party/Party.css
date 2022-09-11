@@ -1,11 +1,11 @@
-.Info {
+.Party {
   width: 100%;
   min-height: 800px;
   box-sizing: border-box;
   background: #fbf3fb;
 }
 
-.InfoWrap {
+.PartyWrap {
   display: flex;
   flex-direction: column;
 }
