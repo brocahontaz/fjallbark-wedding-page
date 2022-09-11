@@ -2,4 +2,92 @@
   width: 100%;
   height: 250px;
   background-color: #2F2D2E;
+  position: relative;
+}
+
+.WhiteRings {
+  width: 150px;
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 75px);
+}
+
+.FooterWrap {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  font-size: 14px;
+}
+
+.FooterWrap ul {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.FooterWrap ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.FooterWrap ul a span {
+  margin-left: 10px;
+}
+
+
+.FooterLeft {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.FooterRight {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Copyright {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+@media screen and (max-width: 900px) {
+  .FooterWrap ul a span {
+    display: none;
+  }
+
+  .Copyright {
+    flex-direction: column;
+  }
+
+  .WhiteRings {
+    top: 55px;
+  }
+
+  .FooterWrap ul {
+    margin-top: 15px;
+  }
+
+  .HideSmall {
+    display: none;
+  }
 }
