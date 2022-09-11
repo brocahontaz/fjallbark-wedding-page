@@ -8,37 +8,81 @@ function Menu() {
       <div className="Positioner">
         <div className="CoverChecker" id="mat" data-scrollspy />
       </div>
-      <ContentBlock title="Mat" subtitle="Om nom nom nom">
+      <ContentBlock title="Mat" subtitle="Segers Mat">
         <h3>Preliminär meny</h3>
-        <br />
+        <h4>
+          Förrätt
+        </h4>
+        <ul>
+          <li>
+            <b>Confiterad torsk</b>
+            {' '}
+            med tillbehör;
+          </li>
+          <li>
+            havskräftsbisque,
+          </li>
+          <li>
+            rostad butternutpumpa,
+          </li>
+          <li>
+            citronemulsion,
+          </li>
+          <li>
+            rökt sidfläsk,
+          </li>
+          <li>
+            och blommor
+          </li>
+        </ul>
 
-        <span>
-          <b>Förätt</b>
-          {' '}
-          Confiterad torsk - havskräftsbisque - rostad butternutpumpa - citronemulsion - rökt sidfläsk - blommor
-        </span>
-        <br />
-        <br />
+        <h4>
+          Huvudrätt
+        </h4>
+        <ul>
+          <li>
+            <b>Bräserad oxkind</b>
+            {' '}
+            med tillbehör;
+          </li>
+          <li>
+            sotad silverlök,
+          </li>
+          <li>
+            bakad palsternacka,
+          </li>
+          <li>
+            syltad pumpa,
+          </li>
+          <li>
+            och gremolata-smaksatt potatispuré
+          </li>
+        </ul>
 
-        <span>
-          <b>Huvudrätt</b>
-          {' '}
-          Bräserad oxkind - sotad silverlök - bakad palsternacka - syltad pumpa - gremolata smaksatt potatispuré
-        </span>
-        <br />
-        <br />
+        <h4>
+          Efterrätt
+        </h4>
 
-        <span>
-          <b>Efterätt</b>
-          {' '}
-          Glenns Schwarzwaldtårta samt prinsesstårta!
-        </span>
+        <ul>
+          <li>
+            <b>Bröllopstårta</b>
+            ;
+          </li>
+          <li>
+            Glenns Schwarzwaldtårta och Glenns Prinsesstårta
+          </li>
+        </ul>
 
-        <br />
-        <br />
-        <br />
+        <h3>
+          Info
+        </h3>
 
-        Maten kommer lagas och serveras av Segers Mat, givetvis tillgodoser de anmälda matpreferenser!
+        <p>
+          Maten kommer lagas och serveras av Segers Mat, givetvis tillgodoser de anmälda matpreferenser!
+        </p>
+        <p>
+          Bröllopstårtorna skapas av fantastiska Glenn hos Segers Söta, givetvis kommer det finnas alternativ till de med anmälda matpreferenser!
+        </p>
       </ContentBlock>
     </div>
 
