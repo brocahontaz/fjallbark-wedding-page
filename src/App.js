@@ -13,7 +13,6 @@ function App() {
   const history = useHistory();
   useEffect(() => {
     const sections = document.querySelectorAll('div[data-scrollspy]');
-    console.log(sections);
 
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
