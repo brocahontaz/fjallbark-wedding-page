@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import './RSVP.css';
 import ContentBlock from '../components/ContentBlock';
+import Kyss from '../../assets/img/kyss.png';
 
 function RSVP() {
   return (
@@ -8,7 +9,7 @@ function RSVP() {
       <div className="Positioner">
         <div className="CoverChecker" id="RSVP" data-scrollspy />
       </div>
-      <ContentBlock title="RSVP" subtitle="Senast 30 september">
+      <ContentBlock title="RSVP" subtitle="Senast 30 september" image={Kyss}>
         <div className="RSVPWrap">
           <iframe
             title="RSVP"
