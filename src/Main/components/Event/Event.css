@@ -58,3 +58,19 @@
 .Row .ExtraInfo {
   padding-right: 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .Location span {
+    font-size: 10px;
+    text-align: right;
+  }
+  .Time span {
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .Row {
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+  }
+}

@@ -1,6 +1,6 @@
 .Menu {
   width: 100%;
-  height: 800px;
+  min-height: 800px;
   background: #fbf3fb;
   scroll-padding-top: 100px;
   box-sizing: border-box;
@@ -27,6 +27,10 @@
   width: 100%;
   text-align: center;
   font-size: 15px;
+}
+
+.Menu ul li:first-of-type {
+  font-size: 18px;
 }
 
 .Menu p {

@@ -10,6 +10,9 @@ function ContentBlock({
         <div className="Title">
           <h2>{title}</h2>
           <div>{subtitle}</div>
+          <div className="SmallImage">
+            <img src={image} alt={title} />
+          </div>
         </div>
         {children}
       </div>
