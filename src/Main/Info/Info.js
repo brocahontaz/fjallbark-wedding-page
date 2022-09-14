@@ -165,41 +165,43 @@ function Info() {
         </div>
       </ContentBlock>
       <ContentBlock>
-        <h3>Preliminär tidsplan</h3>
-        <div className="subtitle">
-          Lördag 19 November 2022
-        </div>
-        <Event
-          thing="Vigsel"
-          location="Vallkärra kyrka"
-          extra="därefter promenad eller biltur till Axelgård"
-          time="14.00"
-        />
-        <Event
-          thing="Mingel, dryck & snacks"
-          location="Axelgård - Lilla salen"
-          extra=" "
-          time="efter vigsel"
-        />
-        <Event
-          thing="Middag"
-          location="Axelgård - Stora salen"
-          extra="3 rätters middag med dryck och underhållning"
-          time="17.30"
-        />
-        <Event
-          thing="Dans"
-          location="Axelgård - Stora salen"
-          extra="Inledningsvis slow dance och därefter untz "
-          time="efter middagen"
-        />
+        <div className="InfoWrap">
+          <h3>Preliminär tidsplan</h3>
+          <div className="subtitle">
+            Lördag 19 November 2022
+          </div>
+          <Event
+            thing="Vigsel"
+            location="Vallkärra kyrka"
+            extra="därefter promenad eller biltur till Axelgård"
+            time="14.00"
+          />
+          <Event
+            thing="Mingel, dryck & snacks"
+            location="Axelgård - Lilla salen"
+            extra=" "
+            time="efter vigsel"
+          />
+          <Event
+            thing="Middag"
+            location="Axelgård - Stora salen"
+            extra="3 rätters middag med dryck och underhållning"
+            time="17.30"
+          />
+          <Event
+            thing="Dans"
+            location="Axelgård - Stora salen"
+            extra="Inledningsvis slow dance och därefter untz "
+            time="efter middagen"
+          />
 
-        <Event
-          thing="Nattamat"
-          location="Axelgård"
-          extra="Enklare korv med bröd"
-          time="senast kl 01"
-        />
+          <Event
+            thing="Nattamat"
+            location="Axelgård"
+            extra="Enklare korv med bröd"
+            time="senast kl 01"
+          />
+        </div>
       </ContentBlock>
     </div>
   );
