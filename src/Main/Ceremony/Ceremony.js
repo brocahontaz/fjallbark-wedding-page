@@ -22,7 +22,7 @@ function Ceremony() {
           Allra enklast är med
           {' '}
           <b>bil</b>
-          , och det finns gott om parkeringsmöjligheter alldels vid kyrkan.
+          , och det finns gott om parkeringsmöjligheter alldeles vid kyrkan.
         </p>
         <p>
           Om jag åker kollektivt så stannar både

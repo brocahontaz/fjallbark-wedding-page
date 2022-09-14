@@ -44,10 +44,10 @@ function Crew() {
           <h3>Toastmaster och Toastmadame</h3>
           <ul>
             <li>
-              Elin Hanstorp
+              Felix Rosenlund
             </li>
             <li>
-              Felix Rosenlund
+              Elin Hanstorp
             </li>
           </ul>
 

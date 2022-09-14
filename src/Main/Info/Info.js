@@ -1,7 +1,5 @@
 /* eslint-disable max-len */
 import './Info.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Event from '../components/Event';
 import ContentBlock from '../components/ContentBlock';
 import Ringbubbel from '../../assets/img/ringbubbel.png';
@@ -138,31 +136,6 @@ function Info() {
               </ul>
             </li>
           </ul>
-          <h3>Jag vill hålla tal!</h3>
-          <div className="subtitle">
-            Vad roligt!
-          </div>
-          <p>
-            Om Ni vill hålla tal, slå en kullerbytta, eller hitta på något annat bus under middagen/festen så uppmuntras detta naturligtvis!
-          </p>
-          <p>
-            Behöver Ni stämma av något med brudparet, så går det bra att kontakta oss direkt på
-            {' '}
-            <a href="mailto:bröllop@fjällbark.se">
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
-              {' '}
-              bröllop@fjällbark.se
-            </a>
-          </p>
-          <p>
-            Om det är något Ni istället vill hålla lite hemligt för brudparet? Ja men då går det ypperligt att istället kontakta våra eminenta toastmasters på
-            {' '}
-            <a href="mailto:toastmaster@fjällbark.se">
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
-              {' '}
-              toastmaster@fjällbark.se
-            </a>
-          </p>
         </div>
       </ContentBlock>
       <ContentBlock image={Ocean}>
