@@ -90,4 +90,8 @@
   .HideSmall {
     display: none;
   }
+
+  .FooterWrap {
+    font-size: 40px;
+  }
 }
