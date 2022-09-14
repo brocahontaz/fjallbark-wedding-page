@@ -71,6 +71,7 @@
 .ContentBlock .Image img {
   width: 100%;
   border: 4px solid white;
+  margin-top: 35px;
 }
 
 .ContentBlock .SmallImage {

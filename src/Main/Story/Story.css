@@ -4,3 +4,16 @@
   background: #fbf3fb;
   position: relative;
 }
+
+.Story .subtitle {
+  text-align: center;
+}
+
+.Story .emojis {
+  text-align: center;
+  font-size: 60px;
+}
+
+.Story .eller {
+  text-align: right;
+}
