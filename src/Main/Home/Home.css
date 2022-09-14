@@ -18,8 +18,33 @@
   max-width: 100%;
 }
 
+.Banner {
+  position: absolute;
+  inset: 0 auto auto 0;
+  background: #fbf3fb;
+  transform-origin: 100% 0;
+  transform: translate(-29.3%) rotate(-45deg);
+  box-shadow: 0 0 0 999px #fbf3fb;
+  clip-path: inset(0 -100%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Garamond;
+  font-weight: 600;
+  color: #5e3f5e;
+}
+
 @media screen and (max-width: 900px) {
   .HomeWrap {
     align-items: flex-start;
+  }
+
+  .Banner {
+    transform-origin: -100% 0;
+    transform: rotate(0deg);
+    box-shadow: 0 0 0 0;
+    inset: auto auto 100px auto;
+    width: 100%;
   }
 }
