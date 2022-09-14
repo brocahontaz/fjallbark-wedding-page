@@ -12,9 +12,9 @@ function Footer() {
         <div className="FooterLeft">
           <ul>
             <li>
-              <a href="mailto:bröllop@fjällbark.se">
+              <a href="mailto:wedding@fjällbark.se">
                 <FontAwesomeIcon icon={faEnvelope} size="1x" />
-                <span>bröllop@fjällbark.se</span>
+                <span>wedding@fjällbark.se</span>
               </a>
             </li>
           </ul>
