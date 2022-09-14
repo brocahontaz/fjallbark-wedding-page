@@ -17,11 +17,36 @@ function Ceremony() {
           {' '}
           strax norr om Lund, med anor från slutet av 1100-talet.
         </p>
+        <h3>Hur tar jag mig hit?</h3>
+        <p>
+          Allra enklast är med
+          {' '}
+          <b>bil</b>
+          , och det finns gott om parkeringsmöjligheter alldels vid kyrkan.
+        </p>
+        <p>
+          Om jag åker kollektivt så stannar både
+          {' '}
+          <b>Stadsbuss 21</b>
+          {' '}
+          i närheten, vid hållplats
+          {' '}
+          <i>Lund Vallkärra by</i>
+          , samt
+          {' '}
+          <b>Regionbuss 123</b>
+          {' '}
+          vid hållplats
+          {' '}
+          <i>Vallkärra k:a</i>
+          .
+        </p>
         <p>
           <b>Adress:</b>
           {' '}
           Kävlingevägen 107, 226 50 Lund
         </p>
+
         <iframe
           title="churchmap"
           className="MapFrame"
