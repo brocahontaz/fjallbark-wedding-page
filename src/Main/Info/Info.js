@@ -5,6 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Event from '../components/Event';
 import ContentBlock from '../components/ContentBlock';
 import Ringbubbel from '../../assets/img/ringbubbel.png';
+import Ocean from '../../assets/img/ocean.jpeg';
 
 function Info() {
   return (
@@ -164,7 +165,7 @@ function Info() {
           </p>
         </div>
       </ContentBlock>
-      <ContentBlock>
+      <ContentBlock image={Ocean}>
         <div className="InfoWrap">
           <h3>Preliminär tidsplan</h3>
           <div className="subtitle">
