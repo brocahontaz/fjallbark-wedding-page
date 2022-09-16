@@ -1,3 +1,7 @@
+.Collapsible {
+  box-shadow: 3px 3px #5e3f5e;
+}
+
 .Collapsible button.Toggle {
   background-color: #fff;
   cursor: pointer;
@@ -10,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   color: #5e3f5e;
-  box-shadow: 3px 3px #5e3f5e;
 }
 
 .Collapsible .Content {
@@ -21,7 +24,6 @@
   box-sizing: border-box;
   background-color: #fff;
   transition: max-height 0.3s ease-in-out;
-  box-shadow: 3px 3px #5e3f5e; 
 }
 
 .Collapsible .Content.Open {
