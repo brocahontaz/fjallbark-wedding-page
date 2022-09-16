@@ -13,9 +13,11 @@ function Info() {
       </div>
       <ContentBlock title="Information" subtitle="The difference that makes a difference" image={Ringbubbel}>
         <div className="InfoWrap">
-          <h3>Observera!</h3>
+          <h3>Välkomna</h3>
+          <div>Stort tack för för att du vill vara med på vårt bröllop 19/11-2022, vi ser fram emot att se er på vår stora dag!</div>
+          <h3>Observera</h3>
           <p>
-            Vi vill kunna bjuda många från familj och vänner, så därför önskar vi en
+            Vi vill kunna bjuda många från familj och vänner så därför önskar vi en
             {' '}
             <b>kuvertavgift istället för present på vårt bröllop</b>
             .
