@@ -17,10 +17,20 @@
   padding-left: 15px;
 }
 
+.InfoWrap ul li {
+  margin: 10px;
+}
+
 .InfoWrap ul li ul {
   padding-left: 20px;
 }
 
 .InfoWrap .subtitle {
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .InfoWrap ul li ul {
+    padding-left: 10px;
+  }
 }
