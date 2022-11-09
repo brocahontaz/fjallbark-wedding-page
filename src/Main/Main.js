@@ -1,5 +1,6 @@
 import './Main.css';
 
+import { useLocation } from 'react-router-dom';
 import Home from './Home';
 import Story from './Story';
 import Info from './Info';
@@ -7,18 +8,31 @@ import Menu from './Menu';
 import Crew from './Crew';
 import Ceremony from './Ceremony';
 import Party from './Party';
+import Quiz from './Quiz';
 
 function Main() {
+  const location = useLocation();
   return (
     <div className="Main" id="Main">
-      <Home />
-      <Info />
-      <Ceremony />
-      <Party />
-      <Menu />
-      <Story />
-      <Crew />
 
+      {(() => {
+        if (location.hash === '#utmaningar') {
+          return (<div>Utmaningar</div>);
+        } if (location.hash === '#middagsquiz') {
+          return (<Quiz />);
+        }
+        return (
+          <>
+            <Home />
+            <Info />
+            <Ceremony />
+            <Party />
+            <Menu />
+            <Story />
+            <Crew />
+          </>
+        );
+      })()}
     </div>
   );
 }

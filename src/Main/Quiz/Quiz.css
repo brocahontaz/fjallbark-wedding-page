@@ -5,3 +5,10 @@
   background: #fbf3fb;
   position: relative;
 }
+
+.QuizWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
