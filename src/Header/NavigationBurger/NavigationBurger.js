@@ -28,15 +28,15 @@ function NavigationBurger({ links }) {
       <div className={`Navbar ${navbarOpen ? 'Open' : ''}`}>
         {links.map((link) => (
           <NavHashLink
-            key={`nav-${link}`}
+            key={`nav-${link.name}`}
             smooth
-            to={`#${link}`}
+            to={`#${link.href}`}
             className={({ isActive }) => `nav-link${isActive ? ' selected' : ''}`}
             activeClassName="selected"
             scroll={(el) => scrollWithOffset(el)}
             onClick={() => closeMenu()}
           >
-            {link.toUpperCase()}
+            {link.name.toUpperCase()}
           </NavHashLink>
         ))}
       </div>

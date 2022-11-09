@@ -5,14 +5,34 @@ import NavigationBurger from './NavigationBurger';
 import Logo from './Logo';
 
 const links = [
-  'hem',
-  'info',
-  'vigsel',
-  'fest',
-  'mat',
-  'story',
-  'crew',
-  'RSVP'
+  {
+    name: 'hem',
+    href: 'hem'
+  },
+  {
+    name: 'info',
+    href: 'info'
+  },
+  {
+    name: 'vigsel',
+    href: 'vigsel'
+  },
+  {
+    name: 'fest',
+    href: 'fest'
+  },
+  {
+    name: 'mat',
+    href: 'mat'
+  },
+  {
+    name: 'story',
+    href: 'story'
+  },
+  {
+    name: 'crew',
+    href: 'crew'
+  }
 ];
 
 function Header() {

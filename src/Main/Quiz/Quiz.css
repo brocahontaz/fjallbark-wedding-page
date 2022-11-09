@@ -1,0 +1,7 @@
+.Quiz {
+  width: 100%;
+  min-height: 800px;
+  box-sizing: border-box;
+  background: #fbf3fb;
+  position: relative;
+}
