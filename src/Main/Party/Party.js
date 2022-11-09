@@ -45,16 +45,16 @@ function Party() {
             <a href="mailto:weddinguntz@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
               {' '}
-              weddinguntz@gmail.come
+              weddinguntz@gmail.com
             </a>
           </p>
           <p>
             Om det är något du istället vill hålla lite hemligt för brudparet? Ja men då går det ypperligt att istället kontakta våra eminenta toastmasters på
             {' '}
-            <a href="mailto:toastmaster@fjällbark.se">
+            <a href="mailto:rosenlund.felix@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
               {' '}
-              toastmaster@fjällbark.se
+              Maila toastmasterZ
             </a>
           </p>
           <h3>
