@@ -1,5 +1,6 @@
 import './Main.css';
 
+import { useLocation } from 'react-router-dom';
 import Home from './Home';
 import Story from './Story';
 import Info from './Info';
@@ -10,16 +11,23 @@ import Party from './Party';
 import RSVP from './RSVP';
 
 function Main() {
+  const location = useLocation();
   return (
     <div className="Main" id="Main">
-      <Home />
-      <Info />
-      <Ceremony />
-      <Party />
-      <Menu />
-      <Story />
-      <Crew />
-      <RSVP />
+      {location.hash === '#utmaningar'
+        ? (<div>Utmaningar</div>)
+        : (
+          <>
+            <Home />
+            <Info />
+            <Ceremony />
+            <Party />
+            <Menu />
+            <Story />
+            <Crew />
+            <RSVP />
+          </>
+        )}
     </div>
   );
 }

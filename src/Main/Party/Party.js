@@ -42,10 +42,10 @@ function Party() {
           <p>
             Behöver du stämma av något med brudparet, så går det bra att kontakta oss direkt på
             {' '}
-            <a href="mailto:wedding@fjällbark.se">
+            <a href="mailto:weddinguntz@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
               {' '}
-              wedding@fjällbark.se
+              weddinguntz@gmail.come
             </a>
           </p>
           <p>
