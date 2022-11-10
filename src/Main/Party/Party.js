@@ -60,7 +60,7 @@ function Party() {
           <h3>
             Underhållning
           </h3>
-          <h4 className="center-text">DJ Stab-Mixer aka Nicolas Salas</h4>
+          <h4 className="center-text">PopQuizKungen</h4>
           <p className="center-text">
             ..kommer stå bakom spakarna under festen och bjuda på untz-untz!
           </p>

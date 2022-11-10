@@ -8,15 +8,20 @@ import Menu from './Menu';
 import Crew from './Crew';
 import Ceremony from './Ceremony';
 import Party from './Party';
-import RSVP from './RSVP';
+import Quiz from './Quiz';
 
 function Main() {
   const location = useLocation();
   return (
     <div className="Main" id="Main">
-      {location.hash === '#utmaningar'
-        ? (<div>Utmaningar</div>)
-        : (
+
+      {(() => {
+        if (location.hash === '#utmaningar') {
+          return (<div>Utmaningar</div>);
+        } if (location.hash === '#middagsquiz') {
+          return (<Quiz />);
+        }
+        return (
           <>
             <Home />
             <Info />
@@ -25,9 +30,9 @@ function Main() {
             <Menu />
             <Story />
             <Crew />
-            <RSVP />
           </>
-        )}
+        );
+      })()}
     </div>
   );
 }

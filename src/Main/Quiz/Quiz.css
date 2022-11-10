@@ -1,0 +1,17 @@
+.Quiz {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #fbf3fb;
+  position: relative;
+}
+
+.QuizWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+}

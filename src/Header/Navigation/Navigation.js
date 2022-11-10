@@ -9,14 +9,14 @@ function Navigation({ links }) {
     <div className="Navigation">
       {links.map((link) => (
         <NavHashLink
-          key={`nav-${link}`}
+          key={`nav-${link.name}`}
           smooth
-          to={`#${link}`}
+          to={`#${link.href}`}
           className={({ isActive }) => `nav-link${isActive ? ' selected' : ''}`}
           activeClassName="selected"
           scroll={(el) => scrollWithOffset(el)}
         >
-          {link.toUpperCase()}
+          {link.name.toUpperCase()}
         </NavHashLink>
       ))}
     </div>
@@ -24,7 +24,12 @@ function Navigation({ links }) {
 }
 
 Navigation.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.string).isRequired
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      href: PropTypes.string
+    })
+  ).isRequired
 };
 
 export default Navigation;
