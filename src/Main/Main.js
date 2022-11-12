@@ -9,6 +9,7 @@ import Crew from './Crew';
 import Ceremony from './Ceremony';
 import Party from './Party';
 import Quiz from './Quiz';
+import Challanges from './Challenges';
 
 function Main() {
   const location = useLocation();
@@ -17,7 +18,7 @@ function Main() {
 
       {(() => {
         if (location.hash === '#utmaningar') {
-          return (<div>Utmaningar</div>);
+          return (<Challanges />);
         } if (location.hash === '#middagsquiz') {
           return (<Quiz />);
         }
