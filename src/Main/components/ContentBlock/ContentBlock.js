@@ -5,20 +5,24 @@ function ContentBlock({
   title, subtitle, image, children
 }) {
   return (
-    <div className="ContentBlock">
+    <div className={`ContentBlock ${image ? '' : 'flex'}`}>
       <div className="Content">
         <div className="Title">
           <h2>{title}</h2>
           <div>{subtitle}</div>
-          <div className="SmallImage">
-            <img src={image} alt={title} />
-          </div>
+          {image && (
+            <div className="SmallImage">
+              <img src={image} alt={title} />
+            </div>
+          )}
         </div>
         {children}
       </div>
-      <div className="Image">
-        <img src={image} alt={title} />
-      </div>
+      {image && (
+        <div className="Image">
+          <img src={image} alt={title} />
+        </div>
+      )}
 
     </div>
   );
