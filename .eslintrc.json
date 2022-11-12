@@ -31,5 +31,11 @@
       "exports": "never",
       "functions": "never"
     }]
+  },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      ".(json|css)$"
+    ]
   }
 }
