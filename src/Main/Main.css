@@ -1,7 +1,8 @@
 .Main {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #fbf3fb;
   margin-top: 100px;
+  flex: 1;
 }
 
 .Positioner {

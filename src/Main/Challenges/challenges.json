@@ -1,19 +1,31 @@
 {
-    "challenges": [
-        {
-            "u": "Ta en selfie med någon från brudgumens familj",
-            "d": "say cheeese",
-            "k": "k1"
-        },
-        {
-            "u": "Skaka hand med någon du aldrig träffat förut",
-            "d": "glöm inte dokumentera",
-            "k": "k2"
-        },
-        {
-            "u": "Skåla med din närmsta vän i rummet",
-            "d": "måste vi påminna",
-            "k": "k3"
-        }
+  "challenges": [
+    {
+      "u": "Ta en selfie med någon från brudparets familjer",
+      "d": "Say cheeeeese!",
+      "k": "k1"
+    },
+    {
+      "u": "Skaka hand med någon du aldrig träffat förut",
+      "d": "Glöm inte att dokumentera!",
+      "k": "k2"
+    },
+    {
+      "u": "Skåla med din närmsta vän i rummet",
+      "d": "Måste vi påminna..?",
+      "k": "k3"
+    },
+    {
+      "u": "Ta en bild när du skålar med någon oväntad",
+      "d": "Cheers!"
+    },
+    {
+      "u": "Ta en bild när du sitter på något konstigt",
+      "d": "Hmm?"
+    },
+    {
+      "u": "Ta en bild när du diggar musiken",
+      "d": "Rock on!"
+    } 
     ]
 }

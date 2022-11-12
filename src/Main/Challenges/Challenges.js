@@ -1,18 +1,16 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import ContentBlock from '../components/ContentBlock';
+import './Challenges.css';
 import data from './challenges.json';
 
 function Challenges() {
   const [active, setActive] = useState(0);
   return (
-    <>
-      <div style={{
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px'
-      }}
-      >
-        <h2>Utmana dig själv under bröllopsminglet</h2>
-        <p>
+    <div className="Challenges">
+      <ContentBlock title="Utmana dig själv" subtitle="under bröllopsminglet">
+        <p className="center-text">
           Skicka bildbevis på alla utförda utmaningar till
           {' '}
           <a href="mailto:weddinguntz@gmail.com">
@@ -20,45 +18,39 @@ function Challenges() {
             {' '}
             weddinguntz@gmail.com
           </a>
+          {' '}
           för att kunna vinna priser!
         </p>
-        <div>
+        <div className="ChallengeList">
           {data.challenges.map((c, i) => (
-            <div key={c.k} style={{ margin: '1em' }}>
-              <div style={{
-                fontWeight: active === i && 800, fontSize: active === i && '3em', color: active === i ? 'black' : 'grey', display: 'flex', width: '100%', justifyContent: 'center'
-              }}
-              >
+            <div key={c.k} className="ChallengeItem">
+              <div className={`Challenge ${active === i ? 'active' : ''}`}>
                 {c.u}
               </div>
-              <div style={{
-                fontSize: active === i && '1.5em', color: active === i ? 'black' : 'grey', display: 'flex', width: '100%', justifyContent: 'center'
-              }}
-              >
+              <div className={`subtext ${active === i ? 'active' : ''}`}>
                 {c.d}
               </div>
             </div>
           ))}
         </div>
-      </div>
 
-      <div style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
-        <button
-          type="button"
-          onClick={() => {
-            if (active + 1 < data.challenges.length) {
-              setActive(active + 1);
-            } else {
-              setActive(0);
-            }
-          }}
-        >
-          <FontAwesomeIcon icon={faAngleRight} size="2x" />
-        </button>
+        <div className="NextButtonWrapper">
+          <button
+            type="button"
+            onClick={() => {
+              if (active + 1 < data.challenges.length) {
+                setActive(active + 1);
+              } else {
+                setActive(0);
+              }
+            }}
+          >
+            <FontAwesomeIcon icon={faAngleRight} size="2x" />
+          </button>
 
-      </div>
-
-    </>
+        </div>
+      </ContentBlock>
+    </div>
   );
 }
 

@@ -12,6 +12,19 @@
   text-align: justify;
 }
 
+.ContentBlock.grid {
+  display: grid;
+}
+
+.ContentBlock.flex {
+  display: flex;
+}
+
+.ContentBlock.flex .Content{
+  width: 100%;
+  padding-right: 0px;
+}
+
 .ContentBlock h3 {
   font-size: 25px;
   font-family: Garamond;
