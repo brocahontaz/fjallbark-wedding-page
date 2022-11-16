@@ -31,13 +31,14 @@ function ContentBlock({
 ContentBlock.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   children: PropTypes.node
 };
 
 ContentBlock.defaultProps = {
   title: '',
   subtitle: '',
+  image: null,
   children: null
 };
 
