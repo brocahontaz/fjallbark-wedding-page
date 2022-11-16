@@ -11,6 +11,15 @@
   margin-top: 0;
 }
 
+.Menu h2 {
+  font-size: 40px;
+  font-family: Garamond;
+  color: #5e3f5e;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
 .Menu h4 {
   margin-top: 20px;
   text-align: center;
@@ -35,4 +44,43 @@
 
 .Menu p {
   text-align: center;
+}
+
+ul.Drinks li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 10px;
+}
+
+ul.Drinks li:first-of-type {
+  font-size: 15px;
+}
+
+ul.Drinks li.head {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+ul.Drinks li.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+ul.Drinks li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.Drinks li span:first-of-type {
+  justify-content: left;
+  text-align: left;
+}
+
+ul.Drinks li span:last-of-type {
+  justify-content: right;
+  text-align: right;
 }

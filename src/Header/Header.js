@@ -22,7 +22,7 @@ const links = [
     href: 'fest'
   },
   {
-    name: 'mat',
+    name: 'mat & dryck',
     href: 'mat'
   },
   {
