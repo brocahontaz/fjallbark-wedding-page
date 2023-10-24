@@ -77,13 +77,6 @@ function Menu() {
         <h3>
           Info
         </h3>
-
-        <p>
-          Maten kommer lagas och serveras av Segers Mat, givetvis tillgodoser de anmälda matpreferenser!
-        </p>
-        <p>
-          Bröllopstårtorna skapas av fantastiska Glenn hos Segers Söta, givetvis kommer det finnas alternativ till de med anmälda matpreferenser!
-        </p>
         <h2>Dryck</h2>
         <h4>Mingel</h4>
         <ul className="Drinks">

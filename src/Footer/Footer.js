@@ -37,11 +37,11 @@ function Footer() {
         </div>
       </div>
       <div className="Copyright">
-        <span>Copyright © 2022-2023 Fjällbark.se</span>
+        <span>Copyright © 2022-2024 Fjällbark.se</span>
         <span className="HideSmall">&nbsp;|&nbsp;</span>
         <span>All rights reserved</span>
         <span className="HideSmall">&nbsp;|&nbsp;</span>
-        <span>Website developed by Johan Andersson & Catarina Sörensen</span>
+        <span>Website developed by Catarina Fjällbark & Johan Fjällbark</span>
       </div>
     </div>
   );

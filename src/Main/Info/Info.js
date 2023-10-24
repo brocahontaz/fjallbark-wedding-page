@@ -14,30 +14,9 @@ function Info() {
       </div>
       <ContentBlock title="Information" subtitle="The difference that makes a difference" image={Ringbubbel}>
         <div className="InfoWrap">
-          <h3>Välkomna</h3>
-          <div>Stort tack för för att du vill vara med på vårt bröllop 19/11-2022, vi ser fram emot att se er på vår stora dag!</div>
-          <h3>Observera</h3>
-          <p>
-            Vi vill kunna bjuda många från familj och vänner så därför önskar vi en
-            {' '}
-            <b>kuvertavgift istället för present på vårt bröllop</b>
-            .
-          </p>
-          <p>
-            Det kommer vara
-            {' '}
-            <b>500kr per kuvert</b>
-            ,
-            {' '}
-            och det kommer (förhoppningsvis) bli fantastisk mat under middagen; samt stor variation av dryck till det, både med och utan alkohol.
-          </p>
-          <p>
-            Ingen återbetalning av kuvertavgiften kan ske vid exempelvis sjukdom/förhinder då allting (och mer därtill) går oavkortat till cateringbolaget, försök håll er friska och krya så ni inte missar denna magiska dag.
-          </p>
+          <h3>TACK!</h3>
+          <div>Stort tack för för att du vill vara med på vårt bröllop 19/11-2022, nu visar vi även bilder från bröllopet!</div>
           <h3>Klädkod</h3>
-          <div className="subtitle">
-            Vad ska jag ha på mig på detta fantastiska kalas?
-          </div>
           <h4 className="center-text">
             Högtidsdräkt eller Mörk kostym
           </h4>
@@ -146,7 +125,7 @@ function Info() {
       </ContentBlock>
       <ContentBlock image={Ocean}>
         <div className="InfoWrap">
-          <h3>Preliminär tidsplan</h3>
+          <h3>Tidsplan</h3>
           <div className="subtitle">
             Lördag 19 November 2022
           </div>

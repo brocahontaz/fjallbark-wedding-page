@@ -7,7 +7,7 @@ import Info from './Info';
 import Menu from './Menu';
 import Crew from './Crew';
 import Ceremony from './Ceremony';
-import Party from './Party';
+import Party from './Foto';
 import Quiz from './Quiz';
 import Challenges from './Challenges';
 

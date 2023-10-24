@@ -18,8 +18,8 @@ const links = [
     href: 'vigsel'
   },
   {
-    name: 'fest',
-    href: 'fest'
+    name: 'foto',
+    href: 'foto'
   },
   {
     name: 'mat & dryck',

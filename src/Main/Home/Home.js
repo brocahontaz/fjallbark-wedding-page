@@ -9,7 +9,7 @@ function Home() {
       </div>
       <div className="HomeWrap">
         <img src={Rings} alt="Rings" />
-        <div className="Banner">Anmälan & kuvertavgift stängd!</div>
+        <div className="Banner">Tack till alla deltagare!</div>
       </div>
     </div>
   );

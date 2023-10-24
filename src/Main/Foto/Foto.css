@@ -1,4 +1,4 @@
-.Party {
+.Foto {
   width: 100%;
   min-height: 800px;
   box-sizing: border-box;
@@ -6,15 +6,15 @@
   position: relative;
 }
 
-.PartyWrap {
+.FotoWrap {
   display: flex;
   flex-direction: column;
 }
 
-.PartyWrap .subtitle {
+.FotoWrap .subtitle {
   text-align: center;
 }
 
-.PartyWrap h3:first-of-type {
+.FotoWrap h3:first-of-type {
   margin-top: 50px;
 }
