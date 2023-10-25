@@ -7,31 +7,38 @@ import Logo from "./Logo";
 const links = [
   {
     name: "hem",
-    href: "hem",
+    href: "/#hem",
+    noscroll: false,
   },
   {
     name: "info",
-    href: "info",
+    href: "/#info",
+    noscroll: false,
   },
   {
     name: "vigsel",
-    href: "vigsel",
+    href: "/#vigsel",
+    noscroll: false,
   },
   {
     name: "foto",
-    href: "foto",
+    href: "/gallery",
+    noscroll: true,
   },
   {
     name: "mat & dryck",
-    href: "mat",
+    href: "/#mat",
+    noscroll: false,
   },
   {
     name: "story",
-    href: "story",
+    href: "/#story",
+    noscroll: false,
   },
   {
     name: "crew",
-    href: "crew",
+    href: "/#crew",
+    noscroll: false,
   },
 ];
 

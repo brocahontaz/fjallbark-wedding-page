@@ -12,6 +12,12 @@
   },
   "plugins": ["react", "jest"],
   "rules": {
+    "react/jsx-curly-newline": {
+      "multiline": "consistent",
+      "singleline": "consistent"
+    },
+    "object-curly-newline": ["error", { "multiline": true }],
+    "implicit-arrow-linebreak": ["off", "beside"],
     "quotes": ["error", "double"],
     "import/extensions": ["off", "never"],
     "indent": ["error", 2],

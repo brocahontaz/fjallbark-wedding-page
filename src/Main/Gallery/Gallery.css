@@ -1,6 +1,20 @@
 .Gallery {
   width: 100%;
-  background-color: #fbf3fb;
-  margin-top: 100px;
-  flex: 1;
+  min-height: 800px;
+  box-sizing: border-box;
+  background: #fbf3fb;
+  position: relative;
+}
+
+.GalleryWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.GalleryWrap .subtitle {
+  text-align: center;
+}
+
+.GalleryWrap h3:first-of-type {
+  margin-top: 50px;
 }

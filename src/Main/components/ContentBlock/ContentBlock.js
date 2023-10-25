@@ -1,9 +1,7 @@
 import "./ContentBlock.css";
 import PropTypes from "prop-types";
 
-function ContentBlock({
-  title, subtitle, image, children
-}) {
+function ContentBlock({ title, subtitle, image, children }) {
   return (
     <div className={`ContentBlock ${image ? "" : "flex"}`}>
       <div className="Content">
@@ -23,7 +21,6 @@ function ContentBlock({
           <img src={image} alt={title} />
         </div>
       )}
-
     </div>
   );
 }
@@ -32,14 +29,14 @@ ContentBlock.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 ContentBlock.defaultProps = {
   title: "",
   subtitle: "",
   image: null,
-  children: null
+  children: null,
 };
 
 export default ContentBlock;
