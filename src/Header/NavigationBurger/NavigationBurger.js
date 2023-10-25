@@ -48,9 +48,9 @@ NavigationBurger.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      href: PropTypes.string
+      href: PropTypes.string,
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default NavigationBurger;

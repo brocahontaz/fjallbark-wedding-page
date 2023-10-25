@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons";
 import "./Event.css";
 
-function Event({
-  thing, time, location, extra
-}) {
+function Event({ thing, time, location, extra }) {
   return (
     <div className="Event">
       <div className="Row">
@@ -34,7 +32,7 @@ Event.propTypes = {
   thing: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  extra: PropTypes.string.isRequired
+  extra: PropTypes.string.isRequired,
 };
 
 export default Event;
