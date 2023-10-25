@@ -1,6 +1,9 @@
 import PhotoAlbum from "react-photo-album";
-import ContentBlock from "../components/ContentBlock";
 import "./Gallery.css";
+
+function getUniqueListBy(arr, key) {
+  return [...new Map(arr.map((item) => [item[key], item])).values()];
+}
 
 function importAll(r) {
   return r.keys().map(r);
@@ -8,19 +11,27 @@ function importAll(r) {
 const filenames = importAll(
   require.context("../../assets/img", false, /\.(png|jpe?g|svg)$/)
 );
-const photos = [
-  { src: "wedding/ringar-mork-tall.png", width: 800, height: 800 },
-  { src: "wedding/ringar-mork-tall.png", width: 800, height: 800 },
-];
-const photos2 = filenames.map((ref) => ({ src: ref, width: 800, height: 800 }));
+const photos = filenames.map((ref) => ({ src: ref, width: 200, height: 200 }));
+
+const photosArr = getUniqueListBy(photos, "src");
 
 function Gallery() {
   return (
     <div className="Gallery">
-      <ContentBlock title="Gallery" subtitle="Axelgård">
-        <PhotoAlbum layout="masonry" photos={photos} />
-        <PhotoAlbum layout="masonry" photos={photos2} />
-      </ContentBlock>
+      <PhotoAlbum
+        layout="masonry"
+        photos={photosArr}
+        renderPhoto={({ photo, wrapperStyle, renderDefaultPhoto }) => (
+          <a
+            href={photo.href}
+            style={wrapperStyle}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {renderDefaultPhoto({ wrapped: true })}
+          </a>
+        )}
+      />
     </div>
   );
 }
