@@ -7,9 +7,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-function Collapsible({
-  buttonText, open, children, height
-}) {
+function Collapsible({ buttonText, open, children, height }) {
   const [isOpen, setIsOpen] = useState(open);
 
   const handleFilterOpening = () => {
@@ -40,13 +38,13 @@ function Collapsible({
 Collapsible.propTypes = {
   buttonText: PropTypes.string,
   open: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 Collapsible.defaultProps = {
   buttonText: "Tryck för att läsa mer",
   open: false,
-  children: null
+  children: null,
 };
 
 export default Collapsible;
