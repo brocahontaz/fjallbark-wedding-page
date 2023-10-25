@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background: #fbf3fb;
   position: relative;
+  padding: 20px;
 }
 
 .GalleryWrap {
