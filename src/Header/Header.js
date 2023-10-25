@@ -1,38 +1,38 @@
-import './Header.css';
+import "./Header.css";
 
-import Navigation from './Navigation';
-import NavigationBurger from './NavigationBurger';
-import Logo from './Logo';
+import Navigation from "./Navigation";
+import NavigationBurger from "./NavigationBurger";
+import Logo from "./Logo";
 
 const links = [
   {
-    name: 'hem',
-    href: 'hem'
+    name: "hem",
+    href: "hem",
   },
   {
-    name: 'info',
-    href: 'info'
+    name: "info",
+    href: "info",
   },
   {
-    name: 'vigsel',
-    href: 'vigsel'
+    name: "vigsel",
+    href: "vigsel",
   },
   {
-    name: 'foto',
-    href: 'foto'
+    name: "foto",
+    href: "foto",
   },
   {
-    name: 'mat & dryck',
-    href: 'mat'
+    name: "mat & dryck",
+    href: "mat",
   },
   {
-    name: 'story',
-    href: 'story'
+    name: "story",
+    href: "story",
   },
   {
-    name: 'crew',
-    href: 'crew'
-  }
+    name: "crew",
+    href: "crew",
+  },
 ];
 
 function Header() {

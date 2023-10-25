@@ -1,5 +1,5 @@
-import './Logo.css';
-import Logotype from '../../assets/img/logo.png';
+import "./Logo.css";
+import Logotype from "../../assets/img/logo.png";
 
 function Logo() {
   return (

@@ -1,3 +1,3 @@
-import Foto from './Foto';
+import Foto from "./Foto";
 
 export default Foto;

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import './RSVP.css';
-import ContentBlock from '../components/ContentBlock';
-import Kyss from '../../assets/img/kyss.png';
+import "./RSVP.css";
+import ContentBlock from "../components/ContentBlock";
+import Kyss from "../../assets/img/kyss.png";
 
 function RSVP() {
   return (

@@ -1,11 +1,11 @@
-import './ContentBlock.css';
-import PropTypes from 'prop-types';
+import "./ContentBlock.css";
+import PropTypes from "prop-types";
 
 function ContentBlock({
   title, subtitle, image, children
 }) {
   return (
-    <div className={`ContentBlock ${image ? '' : 'flex'}`}>
+    <div className={`ContentBlock ${image ? "" : "flex"}`}>
       <div className="Content">
         <div className="Title">
           <h2>{title}</h2>
@@ -36,8 +36,8 @@ ContentBlock.propTypes = {
 };
 
 ContentBlock.defaultProps = {
-  title: '',
-  subtitle: '',
+  title: "",
+  subtitle: "",
   image: null,
   children: null
 };

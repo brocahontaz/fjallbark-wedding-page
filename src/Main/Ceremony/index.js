@@ -1,3 +1,3 @@
-import Ceremony from './Ceremony';
+import Ceremony from "./Ceremony";
 
 export default Ceremony;

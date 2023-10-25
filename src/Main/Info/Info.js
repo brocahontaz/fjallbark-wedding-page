@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
-import './Info.css';
-import Collapsible from '../components/Collapsible';
-import Event from '../components/Event';
-import ContentBlock from '../components/ContentBlock';
-import Ringbubbel from '../../assets/img/ringbubbel.png';
-import Ocean from '../../assets/img/ocean.jpeg';
+import "./Info.css";
+import Collapsible from "../components/Collapsible";
+import Event from "../components/Event";
+import ContentBlock from "../components/ContentBlock";
+import Ringbubbel from "../../assets/img/ringbubbel.png";
+import Ocean from "../../assets/img/ocean.jpeg";
 
 function Info() {
   return (
@@ -32,12 +32,12 @@ function Info() {
             </h5>
             <p>
               Brudgum och marskalker kommer vara klädda i
-              {' '}
+              {" "}
               <b>Frack</b>
               .
               Men då alla inte har tillgång till, eller vill investera i, en sådan utstyrsel,
               så går det givetvis ypperligt bra med en
-              {' '}
+              {" "}
               <b>Mörk kostym</b>
               .
             </p>

@@ -1,3 +1,3 @@
-import Challenges from './Challenges';
+import Challenges from "./Challenges";
 
 export default Challenges;

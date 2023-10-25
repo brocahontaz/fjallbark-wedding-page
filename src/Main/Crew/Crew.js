@@ -1,6 +1,6 @@
-import './Crew.css';
-import ContentBlock from '../components/ContentBlock';
-import Flinta from '../../assets/img/orange.png';
+import "./Crew.css";
+import ContentBlock from "../components/ContentBlock";
+import Flinta from "../../assets/img/orange.png";
 
 function Crew() {
   return (

@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import { NavHashLink } from 'react-router-hash-link';
-import scrollWithOffset from '../utilities/ScrollOffset';
+import PropTypes from "prop-types";
+import { NavHashLink } from "react-router-hash-link";
+import scrollWithOffset from "../utilities/ScrollOffset";
 
-import './Navigation.css';
+import "./Navigation.css";
 
 function Navigation({ links }) {
   return (
@@ -11,8 +11,8 @@ function Navigation({ links }) {
         <NavHashLink
           key={`nav-${link.name}`}
           smooth
-          to={`#${link.href}`}
-          className={({ isActive }) => `nav-link${isActive ? ' selected' : ''}`}
+          to={`/#${link.href}`}
+          className={({ isActive }) => `nav-link${isActive ? " selected" : ""}`}
           activeClassName="selected"
           scroll={(el) => scrollWithOffset(el)}
         >
@@ -27,9 +27,9 @@ Navigation.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      href: PropTypes.string
+      href: PropTypes.string,
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default Navigation;
