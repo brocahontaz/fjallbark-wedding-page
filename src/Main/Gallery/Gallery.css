@@ -1,4 +1,4 @@
-.Foto {
+.Gallery {
   width: 100%;
   min-height: 800px;
   box-sizing: border-box;
@@ -6,15 +6,15 @@
   position: relative;
 }
 
-.FotoWrap {
+.GalleryWrap {
   display: flex;
   flex-direction: column;
 }
 
-.FotoWrap .subtitle {
+.GalleryWrap .subtitle {
   text-align: center;
 }
 
-.FotoWrap h3:first-of-type {
+.GalleryWrap h3:first-of-type {
   margin-top: 50px;
 }

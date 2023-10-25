@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faClock } from '@fortawesome/free-solid-svg-icons';
-import './Event.css';
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons";
+import "./Event.css";
 
 function Event({
   thing, time, location, extra

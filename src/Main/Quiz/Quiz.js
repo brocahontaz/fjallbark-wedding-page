@@ -1,4 +1,4 @@
-import './Quiz.css';
+import "./Quiz.css";
 
 function Quiz() {
   return (

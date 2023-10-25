@@ -1,5 +1,5 @@
-import './Home.css';
-import Rings from '../../assets/img/ringarbakgrund.png';
+import "./Home.css";
+import Rings from "../../assets/img/ringarbakgrund.png";
 
 function Home() {
   return (

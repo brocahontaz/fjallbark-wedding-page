@@ -20,7 +20,7 @@
   display: flex;
 }
 
-.ContentBlock.flex .Content{
+.ContentBlock.flex .Content {
   width: 100%;
   padding-right: 0px;
 }
@@ -121,6 +121,5 @@
 
   .ContentBlock .SmallImage {
     display: flex;
-    ;
   }
 }

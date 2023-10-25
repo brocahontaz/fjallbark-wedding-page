@@ -1,8 +1,8 @@
-import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import RingsWhite from '../assets/img/ringar-vit-square.png';
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import RingsWhite from "../assets/img/ringar-vit-square.png";
 
 function Footer() {
   return (
@@ -28,7 +28,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faGithub} size="1x" />
                 <span>
                   View
-                  {' '}
+                  {" "}
                   <b>source code</b>
                 </span>
               </a>

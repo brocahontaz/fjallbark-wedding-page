@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import ContentBlock from '../components/ContentBlock';
-import './Menu.css';
-import Occo from '../../assets/img/occo.png';
+import ContentBlock from "../components/ContentBlock";
+import "./Menu.css";
+import Occo from "../../assets/img/occo.png";
 
 function Menu() {
   return (
@@ -17,7 +17,7 @@ function Menu() {
         <ul>
           <li>
             <b>Confiterad torsk</b>
-            {' '}
+            {" "}
             med tillbehör;
           </li>
           <li>
@@ -43,7 +43,7 @@ function Menu() {
         <ul>
           <li>
             <b>Bräserad oxkind</b>
-            {' '}
+            {" "}
             med tillbehör;
           </li>
           <li>
