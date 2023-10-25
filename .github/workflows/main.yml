@@ -1,31 +1,23 @@
-on: 
+name: Build and Deploy
+on:
   push:
     branches:    
       - main
-name: Deploy website on push
+permissions:
+  contents: write
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v2
-    
-    - name: Use Node.js 18
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18'
-      
-    - name: Build Project
-      run: |
-        npm install
-        npm run build
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ${{ secrets.ftp_server }}
-        username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_pwd }}
-        local-dir: ./build/
-        server-dir: ./xn--fjllbark-1za.se/public_html/
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages 
+          folder: build
