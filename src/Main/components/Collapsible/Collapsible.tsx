@@ -17,8 +17,7 @@ function Collapsible({ buttonText, open, children, height }) {
   return (
     <div className="Collapsible">
       <button type="button" className="Toggle" onClick={handleFilterOpening}>
-        {buttonText}
-        {" "}
+        {buttonText}{" "}
         {!isOpen ? (
           <FontAwesomeIcon icon={faChevronDown} />
         ) : (
@@ -27,9 +26,7 @@ function Collapsible({ buttonText, open, children, height }) {
       </button>
       <div className={`Content${isOpen ? " Open" : ""}`}>
         <div className="Border" />
-        <div className="Wrapper">
-          {children}
-        </div>
+        <div className="Wrapper">{children}</div>
       </div>
     </div>
   );

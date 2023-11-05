@@ -14,7 +14,7 @@ import Gallery from "./Gallery";
 function Main() {
   const location = useLocation();
   return (
-    <div className="Main" id="Main">
+    <div className= "Main" id = "Main" >
       {(() => {
         if (location.pathname === "/gallery") {
           return <Gallery />;
@@ -27,16 +27,17 @@ function Main() {
         }
         return (
           <>
-            <Home />
-            <Info />
-            <Ceremony />
-            <Menu />
-            <Story />
-            <Crew />
+          <Home />
+          < Info />
+          <Ceremony />
+          < Menu />
+          <Story />
+          < Crew />
           </>
         );
-      })()}
-    </div>
+      })()
+}
+</div>
   );
 }
 

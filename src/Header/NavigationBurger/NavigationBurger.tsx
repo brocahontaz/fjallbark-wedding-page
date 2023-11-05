@@ -22,7 +22,11 @@ function NavigationBurger({ links }) {
   return (
     <div className="NavigationBurger">
       <button type="button" onClick={handleToggle}>
-        { !navbarOpen ? <FontAwesomeIcon icon={faBars} size="2x" /> : <FontAwesomeIcon icon={faXmark} size="2x" /> }
+        {!navbarOpen ? (
+          <FontAwesomeIcon icon={faBars} size="2x" />
+        ) : (
+          <FontAwesomeIcon icon={faXmark} size="2x" />
+        )}
       </button>
 
       <div className={`Navbar ${navbarOpen ? "Open" : ""}`}>
@@ -31,7 +35,9 @@ function NavigationBurger({ links }) {
             key={`nav-${link.name}`}
             smooth
             to={`#${link.href}`}
-            className={({ isActive }) => `nav-link${isActive ? " selected" : ""}`}
+            className={({ isActive }) =>
+              `nav-link${isActive ? " selected" : ""}`
+            }
             activeClassName="selected"
             scroll={(el) => scrollWithOffset(el)}
             onClick={() => closeMenu()}
