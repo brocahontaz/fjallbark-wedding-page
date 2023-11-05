@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import PhotoAlbum from "react-photo-album";
+import PhotoAlbum, { Photo } from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -11,13 +11,13 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import "./Gallery.css";
 
-function getUniqueListBy(arr, key) {
-  return [...new Map(arr.map((item) => [item[key], item])).values()];
+function getUniqueListBy(arr: { src: string; width: number; height: number; }[], key: string) {
+  return [...new Map(arr.map((item: { [x: string]: any; }) => [item[key], item])).values()];
 }
 
 const files = import.meta.glob([
   "/public/gallery/*.png",
-  "/public/gallery/*.jpeg",
+  "/public/gallery/*.jpg"
 ]);
 
 const filenames = [];
@@ -38,7 +38,7 @@ function Gallery() {
     <div className="Gallery">
       <PhotoAlbum
         layout="masonry"
-        photos={photosArr}
+        photos={photosArr as Photo[]}
         onClick={({ index }) => setIndex(index)}
         renderPhoto={({ wrapperStyle, renderDefaultPhoto }) => (
           <a style={wrapperStyle} target="_blank" rel="noreferrer noopener">
