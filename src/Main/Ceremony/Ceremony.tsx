@@ -11,11 +11,8 @@ function Ceremony() {
       </div>
       <ContentBlock title="Vigsel" subtitle="Vallkärra Kyrka" image={Church}>
         <p>
-          Själva ceremonin ägde rum i den vackra
-          {" "}
-          <b>Vallkärra Kyrka</b>
-          {" "}
-          strax norr om Lund, med anor från slutet av 1100-talet.
+          Själva ceremonin ägde rum i den vackra <b>Vallkärra Kyrka</b> strax
+          norr om Lund, med anor från slutet av 1100-talet.
         </p>
       </ContentBlock>
     </div>

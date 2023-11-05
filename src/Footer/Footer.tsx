@@ -21,15 +21,12 @@ function Footer() {
         </div>
         <div />
         <div className="FooterRight">
-
           <ul>
             <li>
               <a href="https://www.github.com/brocahontaz/fjallbark">
                 <FontAwesomeIcon icon={faGithub} size="1x" />
                 <span>
-                  View
-                  {" "}
-                  <b>source code</b>
+                  View <b>source code</b>
                 </span>
               </a>
             </li>

@@ -11,72 +11,39 @@ function Menu() {
       </div>
       <ContentBlock title="Mat" subtitle="Segers Mat" image={Occo}>
         <h3>Meny</h3>
-        <h4>
-          Förrätt
-        </h4>
+        <h4>Förrätt</h4>
         <ul>
           <li>
-            <b>Confiterad torsk</b>
-            {" "}
-            med tillbehör;
+            <b>Confiterad torsk</b> med tillbehör;
           </li>
-          <li>
-            havskräftsbisque,
-          </li>
-          <li>
-            rostad butternutpumpa,
-          </li>
-          <li>
-            citronemulsion,
-          </li>
-          <li>
-            rökt sidfläsk,
-          </li>
-          <li>
-            och blommor
-          </li>
+          <li>havskräftsbisque,</li>
+          <li>rostad butternutpumpa,</li>
+          <li>citronemulsion,</li>
+          <li>rökt sidfläsk,</li>
+          <li>och blommor</li>
         </ul>
 
-        <h4>
-          Huvudrätt
-        </h4>
+        <h4>Huvudrätt</h4>
         <ul>
           <li>
-            <b>Bräserad oxkind</b>
-            {" "}
-            med tillbehör;
+            <b>Bräserad oxkind</b> med tillbehör;
           </li>
-          <li>
-            sotad silverlök,
-          </li>
-          <li>
-            bakad palsternacka,
-          </li>
-          <li>
-            syltad pumpa,
-          </li>
-          <li>
-            och gremolata-smaksatt potatispuré
-          </li>
+          <li>sotad silverlök,</li>
+          <li>bakad palsternacka,</li>
+          <li>syltad pumpa,</li>
+          <li>och gremolata-smaksatt potatispuré</li>
         </ul>
 
-        <h4>
-          Efterrätt
-        </h4>
+        <h4>Efterrätt</h4>
 
         <ul>
           <li>
-            <b>Bröllopstårta</b>
-            ;
+            <b>Bröllopstårta</b>;
           </li>
-          <li>
-            Glenns Schwarzwaldtårta och Glenns Prinsesstårta
-          </li>
+          <li>Glenns Schwarzwaldtårta och Glenns Prinsesstårta</li>
         </ul>
 
-        <h3>
-          Info
-        </h3>
+        <h3>Info</h3>
         <h2>Dryck</h2>
         <h4>Mingel</h4>
         <ul className="Drinks">
@@ -141,9 +108,7 @@ function Menu() {
             <span>-</span>
             <span>Cider</span>
           </li>
-          <li className="head">
-            Alkhoholfritt
-          </li>
+          <li className="head">Alkhoholfritt</li>
           <li>
             <span>Freixenet</span>
             <span>-</span>
@@ -182,9 +147,7 @@ function Menu() {
         </ul>
         <h4>Huvudrätt</h4>
         <ul className="Drinks">
-          <li className="head">
-            Alkoholhaltigt
-          </li>
+          <li className="head">Alkoholhaltigt</li>
           <li>
             <span>Baron de ley RIOJA</span>
             <span>-</span>
@@ -205,9 +168,7 @@ function Menu() {
             <span>-</span>
             <span>Cider</span>
           </li>
-          <li className="head">
-            Alkoholfritt
-          </li>
+          <li className="head">Alkoholfritt</li>
           <li>
             <span>Brämhults</span>
             <span>-</span>
@@ -241,9 +202,7 @@ function Menu() {
         </ul>
         <h4>Tårta</h4>
         <ul className="Drinks">
-          <li className="head">
-            Alkoholhaltigt
-          </li>
+          <li className="head">Alkoholhaltigt</li>
           <li>
             <span>Amarula cream</span>
             <span>-</span>
@@ -279,9 +238,7 @@ function Menu() {
             <span>-</span>
             <span>Öl</span>
           </li>
-          <li className="head">
-            Alkoholfritt
-          </li>
+          <li className="head">Alkoholfritt</li>
           <li>
             <span>Ingefärashot</span>
             <span />
@@ -315,10 +272,12 @@ function Menu() {
         </ul>
         <h4>Dansgolv</h4>
         <p>Allt som finns kvar av ovan nämnda dryck!</p>
-        <p>Det kommer även finnas en självbetjäningsbar med möjlighet till bland annat Gin & Tonic, m.m.</p>
+        <p>
+          Det kommer även finnas en självbetjäningsbar med möjlighet till bland
+          annat Gin & Tonic, m.m.
+        </p>
       </ContentBlock>
     </div>
-
   );
 }
 

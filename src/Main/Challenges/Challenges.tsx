@@ -11,14 +11,11 @@ function Challenges() {
     <div className="Challenges">
       <ContentBlock title="Utmana dig själv" subtitle="under bröllopsminglet">
         <p className="center-text">
-          Skicka bildbevis på alla utförda utmaningar till
-          {" "}
+          Skicka bildbevis på alla utförda utmaningar till{" "}
           <a href="mailto:weddinguntz@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} size="1x" />
-            {" "}
+            <FontAwesomeIcon icon={faEnvelope} size="1x" />{" "}
             weddinguntz@gmail.com
-          </a>
-          {" "}
+          </a>{" "}
           för att kunna vinna priser!
         </p>
         <div className="ChallengeList">
@@ -47,7 +44,6 @@ function Challenges() {
           >
             <FontAwesomeIcon icon={faAngleRight} size="2x" />
           </button>
-
         </div>
       </ContentBlock>
     </div>

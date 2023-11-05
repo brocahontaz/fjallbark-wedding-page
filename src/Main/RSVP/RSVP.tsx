@@ -22,9 +22,14 @@ function RSVP() {
             marginWidth="0"
           >
             Läser in…
-
           </iframe>
-          <a href="https://forms.gle/NihnaNdpuWLdV1EZ8" target="_blank" rel="noreferrer">Formulär för anmälan hittar jag här</a>
+          <a
+            href="https://forms.gle/NihnaNdpuWLdV1EZ8"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Formulär för anmälan hittar jag här
+          </a>
         </div>
       </ContentBlock>
     </div>

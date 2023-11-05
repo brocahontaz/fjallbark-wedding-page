@@ -12,53 +12,33 @@ function Crew() {
         <div className="CrewWrap">
           <h3>Hederstärna</h3>
           <ul>
-            <li>
-              Jennifer Holst
-            </li>
+            <li>Jennifer Holst</li>
           </ul>
           <h4>Tärnor</h4>
           <ul>
-            <li>
-              Lisa Jakobsson
-            </li>
-            <li>
-              Sanna Holmgren
-            </li>
+            <li>Lisa Jakobsson</li>
+            <li>Sanna Holmgren</li>
           </ul>
           <h3>Best Man</h3>
           <ul>
-            <li>
-              Ulrik Sjölin
-            </li>
+            <li>Ulrik Sjölin</li>
           </ul>
           <h4>Marskalker</h4>
           <ul>
-            <li>
-              Daniel Ohlsson
-            </li>
-            <li>
-              Markus Maga
-            </li>
+            <li>Daniel Ohlsson</li>
+            <li>Markus Maga</li>
           </ul>
 
           <h3>Toastmaster och Toastmadame</h3>
           <ul>
-            <li>
-              Felix Rosenlund
-            </li>
-            <li>
-              Elin Hanstorp
-            </li>
+            <li>Felix Rosenlund</li>
+            <li>Elin Hanstorp</li>
           </ul>
 
           <h3>Värdpar</h3>
           <ul>
-            <li>
-              Kristoffer Linderman
-            </li>
-            <li>
-              Linnea Åsberg
-            </li>
+            <li>Kristoffer Linderman</li>
+            <li>Linnea Åsberg</li>
           </ul>
         </div>
       </ContentBlock>
