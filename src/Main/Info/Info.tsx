@@ -1,10 +1,9 @@
-/* eslint-disable max-len */
-import "./Info.css";
-import Collapsible from "../components/Collapsible";
-import Event from "../components/Event";
-import ContentBlock from "../components/ContentBlock";
-import Ringbubbel from "../../assets/img/ringbubbel.png";
-import Ocean from "../../assets/img/ocean.jpeg";
+import "./Info.css"
+import Collapsible from "../components/Collapsible"
+import Event from "../components/Event"
+import ContentBlock from "../components/ContentBlock"
+import Ringbubbel from "../../assets/img/ringbubbel.png"
+import Ocean from "../../assets/img/ocean.jpeg"
 
 function Info() {
   return (
@@ -141,7 +140,7 @@ function Info() {
         </div>
       </ContentBlock>
     </div>
-  );
+  )
 }
 
-export default Info;
+export default Info
