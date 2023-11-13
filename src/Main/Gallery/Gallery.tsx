@@ -12,17 +12,6 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "./Gallery.css";
 import { filenames } from "./Files";
 
-function getUniqueListBy(
-  arr: { src: string; width: number; height: number }[],
-  key: string
-) {
-  return [
-    ...new Map(
-      arr.map((item: { [x: string]: any }) => [item[key], item])
-    ).values(),
-  ];
-}
-
 const photos = filenames.map((ref) => ({
   src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
   width: 350,
@@ -54,10 +43,6 @@ const photosFull = filenames.map((ref) => ({
   ],
 }));
 
-console.log(photos);
-
-const photosArr = getUniqueListBy(photos, "src");
-
 function Gallery() {
   const [index, setIndex] = useState(-1);
 
@@ -65,7 +50,7 @@ function Gallery() {
     <div className="Gallery">
       <PhotoAlbum
         layout="masonry"
-        photos={photosArr as Photo[]}
+        photos={photos as Photo[]}
         onClick={({ index }) => setIndex(index)}
         renderPhoto={({ wrapperStyle, renderDefaultPhoto }) => (
           <a style={wrapperStyle} target="_blank" rel="noreferrer noopener">

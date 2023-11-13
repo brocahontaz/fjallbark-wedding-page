@@ -1,7 +1,6 @@
-/* eslint-disable max-len */
-import "./RSVP.css";
-import ContentBlock from "../components/ContentBlock";
-import Kyss from "../../assets/img/kyss.png";
+import "./RSVP.css"
+import ContentBlock from "../components/ContentBlock"
+import Kyss from "../../assets/img/kyss.png"
 
 function RSVP() {
   return (
@@ -17,9 +16,6 @@ function RSVP() {
             src="https://docs.google.com/forms/d/e/1FAIpQLScad-sHbxDI-Ysw7ImlPHbjgH8masgrTScc5gkWnFUnqZA9Pw/viewform?embedded=true"
             width="100%"
             height="1461"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
           >
             Läser in…
           </iframe>
@@ -33,7 +29,7 @@ function RSVP() {
         </div>
       </ContentBlock>
     </div>
-  );
+  )
 }
 
-export default RSVP;
+export default RSVP

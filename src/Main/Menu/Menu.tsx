@@ -1,7 +1,6 @@
-/* eslint-disable max-len */
-import ContentBlock from "../components/ContentBlock";
-import "./Menu.css";
-import Occo from "../../assets/img/occo.png";
+import ContentBlock from "../components/ContentBlock"
+import "./Menu.css"
+import Occo from "../../assets/img/occo.png"
 
 function Menu() {
   return (
@@ -278,7 +277,7 @@ function Menu() {
         </p>
       </ContentBlock>
     </div>
-  );
+  )
 }
 
-export default Menu;
+export default Menu
