@@ -28,7 +28,7 @@ const links: Array<Link> = [
   },
   {
     name: "foto",
-    href: "/gallery",
+    href: "/#gallery",
     noscroll: true,
   },
   {
