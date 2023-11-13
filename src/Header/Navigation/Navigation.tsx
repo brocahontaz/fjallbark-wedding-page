@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import { NavHashLink } from "react-router-hash-link"
-import { NavLink } from "react-router-dom"
 import scrollWithOffset from "../utilities/ScrollOffset"
 
 import "./Navigation.css"
@@ -29,13 +28,13 @@ function Navigation({ links }: NavigationProps) {
           )
         }
         return (
-          <NavLink
+          <NavHashLink
             key={`nav-${link.name}`}
             to={`${link.href}`}
             className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
           >
             {link.name.toUpperCase()}
-          </NavLink>
+          </NavHashLink>
         )
       })}
     </div>

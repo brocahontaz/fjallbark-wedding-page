@@ -9,7 +9,6 @@ import scrollWithOffset from "../utilities/ScrollOffset"
 import "./NavigationBurger.css"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
 import { Link } from "../Header"
-import { NavLink } from "react-router-dom"
 
 type NavigationBurgerProps = {
   links: Link[]
@@ -56,14 +55,14 @@ function NavigationBurger({ links }: NavigationBurgerProps) {
             )
           }
           return (
-            <NavLink
+            <NavHashLink
               key={`nav-${link.name}`}
               to={`${link.href}`}
               className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
               onClick={() => closeMenu()}
             >
               {link.name.toUpperCase()}
-            </NavLink>
+            </NavHashLink>
           )
         })}
       </div>
