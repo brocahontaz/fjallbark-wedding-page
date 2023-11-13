@@ -10,22 +10,49 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import "./Gallery.css";
+import { filenames } from "./Files";
 
-function getUniqueListBy(arr: { src: string; width: number; height: number; }[], key: string) {
-  return [...new Map(arr.map((item: { [x: string]: any; }) => [item[key], item])).values()];
+function getUniqueListBy(
+  arr: { src: string; width: number; height: number }[],
+  key: string
+) {
+  return [
+    ...new Map(
+      arr.map((item: { [x: string]: any }) => [item[key], item])
+    ).values(),
+  ];
 }
 
-const files = import.meta.glob([
-  "/public/gallery/*.png",
-  "/public/gallery/*.jpg"
-]);
+const photos = filenames.map((ref) => ({
+  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  width: 350,
+  height: 233,
+  srcSet: [
+    {
+      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      width: 350,
+      height: 233,
+    },
+  ],
+}));
 
-const filenames = [];
-for (const key in files) {
-  filenames.push(key.split(/public/)[1]);
-}
-
-const photos = filenames.map((ref) => ({ src: ref, width: 200, height: 200 }));
+const photosFull = filenames.map((ref) => ({
+  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  width: 1080,
+  height: 720,
+  srcSet: [
+    {
+      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      width: 350,
+      height: 233,
+    },
+    {
+      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      width: 1080,
+      height: 720,
+    },
+  ],
+}));
 
 console.log(photos);
 
@@ -48,7 +75,7 @@ function Gallery() {
       />
 
       <Lightbox
-        slides={photos}
+        slides={photosFull}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
