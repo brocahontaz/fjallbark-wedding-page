@@ -9,6 +9,7 @@ import scrollWithOffset from "../utilities/ScrollOffset"
 import "./NavigationBurger.css"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
 import { Link } from "../Header"
+import { NavLink } from "react-router-dom"
 
 type NavigationBurgerProps = {
   links: Link[]
@@ -36,19 +37,35 @@ function NavigationBurger({ links }: NavigationBurgerProps) {
       </button>
 
       <div className={`Navbar ${navbarOpen ? "Open" : ""}`}>
-        {links.map((link) => (
-          <NavHashLink
-            key={`nav-${link.name}`}
-            smooth
-            to={`#${link.href}`}
-            className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
-            activeClassName="selected"
-            scroll={(el) => scrollWithOffset(el)}
-            onClick={() => closeMenu()}
-          >
-            {link.name.toUpperCase()}
-          </NavHashLink>
-        ))}
+        {links.map((link) => {
+          if (!link.noscroll) {
+            return (
+              <NavHashLink
+                key={`nav-${link.name}`}
+                smooth
+                to={`${link.href}`}
+                className={(isActive) =>
+                  `nav-link${isActive ? " selected" : ""}`
+                }
+                activeClassName="selected"
+                scroll={(el) => scrollWithOffset(el)}
+                onClick={() => closeMenu()}
+              >
+                {link.name.toUpperCase()}
+              </NavHashLink>
+            )
+          }
+          return (
+            <NavLink
+              key={`nav-${link.name}`}
+              to={`${link.href}`}
+              className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
+              onClick={() => closeMenu()}
+            >
+              {link.name.toUpperCase()}
+            </NavLink>
+          )
+        })}
       </div>
     </div>
   )
