@@ -1,31 +1,37 @@
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { NavHashLink } from "react-router-hash-link";
+import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { useState } from "react"
+import { NavHashLink } from "react-router-hash-link"
 
-import scrollWithOffset from "../utilities/ScrollOffset";
+import scrollWithOffset from "../utilities/ScrollOffset"
 
-import "./NavigationBurger.css";
+import "./NavigationBurger.css"
+import { IconProp } from "@fortawesome/fontawesome-svg-core"
+import { Link } from "../Header"
 
-function NavigationBurger({ links }) {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+type NavigationBurgerProps = {
+  links: Link[]
+}
+
+function NavigationBurger({ links }: NavigationBurgerProps) {
+  const [navbarOpen, setNavbarOpen] = useState(false)
 
   const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
-  };
+    setNavbarOpen((prev) => !prev)
+  }
 
   const closeMenu = () => {
-    setNavbarOpen(false);
-  };
+    setNavbarOpen(false)
+  }
 
   return (
     <div className="NavigationBurger">
       <button type="button" onClick={handleToggle}>
         {!navbarOpen ? (
-          <FontAwesomeIcon icon={faBars} size="2x" />
+          <FontAwesomeIcon icon={faBars as IconProp} size="2x" />
         ) : (
-          <FontAwesomeIcon icon={faXmark} size="2x" />
+          <FontAwesomeIcon icon={faXmark as IconProp} size="2x" />
         )}
       </button>
 
@@ -35,9 +41,7 @@ function NavigationBurger({ links }) {
             key={`nav-${link.name}`}
             smooth
             to={`#${link.href}`}
-            className={({ isActive }) =>
-              `nav-link${isActive ? " selected" : ""}`
-            }
+            className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
             activeClassName="selected"
             scroll={(el) => scrollWithOffset(el)}
             onClick={() => closeMenu()}
@@ -47,7 +51,7 @@ function NavigationBurger({ links }) {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
 NavigationBurger.propTypes = {
@@ -57,6 +61,6 @@ NavigationBurger.propTypes = {
       href: PropTypes.string,
     })
   ).isRequired,
-};
+}
 
-export default NavigationBurger;
+export default NavigationBurger
