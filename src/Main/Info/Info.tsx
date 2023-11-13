@@ -19,8 +19,8 @@ function Info() {
         <div className="InfoWrap">
           <h3>TACK!</h3>
           <div>
-            Stort tack för för att du vill vara med på vårt bröllop 19/11-2022,
-            nu visar vi även bilder från bröllopet!
+            Stort TACK för för att ni ville vara med på vårt bröllop den
+            19/11-2022, nu visar vi även bilder från bröllopet (FOTO i menyn)!
           </div>
           <h3>Klädkod</h3>
           <h4 className="center-text">Högtidsdräkt eller Mörk kostym</h4>
