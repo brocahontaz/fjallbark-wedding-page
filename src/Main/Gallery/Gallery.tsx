@@ -1,50 +1,50 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import PhotoAlbum, { Photo } from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import PhotoAlbum, { Photo } from "react-photo-album"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/thumbnails.css"
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
-import "./Gallery.css";
-import { filenames } from "./Files";
+import "./Gallery.css"
+import { filenames } from "./Files"
 
 const photos = filenames.map((ref) => ({
-  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  src: `https://images.fjallbark.se/wedding/thumbnails/${ref}`,
   width: 350,
   height: 233,
   srcSet: [
     {
-      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      src: `https://images.fjallbark.se/wedding/thumbnails/${ref}`,
       width: 350,
       height: 233,
     },
   ],
-}));
+}))
 
 const photosFull = filenames.map((ref) => ({
-  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  src: `https://images.fjallbark.se/wedding/thumbnails/${ref}`,
   width: 1080,
   height: 720,
   srcSet: [
     {
-      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      src: `https://images.fjallbark.se/wedding/thumbnails/${ref}`,
       width: 350,
       height: 233,
     },
     {
-      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      src: `https://images.fjallbark.se/wedding/fullsize/${ref}`,
       width: 1080,
       height: 720,
     },
   ],
-}));
+}))
 
 function Gallery() {
-  const [index, setIndex] = useState(-1);
+  const [index, setIndex] = useState(-1)
 
   return (
     <div className="Gallery">
@@ -68,7 +68,7 @@ function Gallery() {
         plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
       />
     </div>
-  );
+  )
 }
 
-export default Gallery;
+export default Gallery
