@@ -1,9 +1,17 @@
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons";
-import "./Event.css";
+import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons"
+import "./Event.css"
+import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
-function Event({ thing, time, location, extra }) {
+type EventProps = {
+  thing: string
+  time: string
+  location: string
+  extra: string
+}
+
+function Event({ thing, time, location, extra }: EventProps) {
   return (
     <div className="Event">
       <div className="Row">
@@ -12,7 +20,7 @@ function Event({ thing, time, location, extra }) {
         </div>
         <div className="Location">
           <span>{location}</span>
-          <FontAwesomeIcon icon={faLocationDot} size="1x" />
+          <FontAwesomeIcon icon={faLocationDot as IconProp} size="1x" />
         </div>
       </div>
       <div className="Row">
@@ -21,11 +29,11 @@ function Event({ thing, time, location, extra }) {
         </div>
         <div className="Time">
           <span>{time}</span>
-          <FontAwesomeIcon icon={faClock} size="1x" />
+          <FontAwesomeIcon icon={faClock as IconProp} size="1x" />
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 Event.propTypes = {
@@ -33,6 +41,6 @@ Event.propTypes = {
   time: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   extra: PropTypes.string.isRequired,
-};
+}
 
-export default Event;
+export default Event
