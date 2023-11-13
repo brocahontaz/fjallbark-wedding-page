@@ -10,22 +10,36 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import "./Gallery.css";
+import { filenames } from "./Files";
 
-function getUniqueListBy(arr: { src: string; width: number; height: number; }[], key: string) {
-  return [...new Map(arr.map((item: { [x: string]: any; }) => [item[key], item])).values()];
+function getUniqueListBy(
+  arr: { src: string; width: number; height: number }[],
+  key: string
+) {
+  return [
+    ...new Map(
+      arr.map((item: { [x: string]: any }) => [item[key], item])
+    ).values(),
+  ];
 }
 
-const files = import.meta.glob([
-  "/public/gallery/*.png",
-  "/public/gallery/*.jpg"
-]);
-
-const filenames = [];
-for (const key in files) {
-  filenames.push(key.split(/public/)[1]);
-}
-
-const photos = filenames.map((ref) => ({ src: ref, width: 200, height: 200 }));
+const photos = filenames.map((ref) => ({
+  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  width: 350,
+  height: 233,
+  srcSet: [
+    {
+      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      width: 350,
+      height: 233,
+    },
+    {
+      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      width: 350,
+      height: 233,
+    },
+  ],
+}));
 
 console.log(photos);
 
