@@ -33,10 +33,23 @@ const photos = filenames.map((ref) => ({
       width: 350,
       height: 233,
     },
+  ],
+}));
+
+const photosFull = filenames.map((ref) => ({
+  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+  width: 1080,
+  height: 720,
+  srcSet: [
     {
-      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
       width: 350,
       height: 233,
+    },
+    {
+      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      width: 1080,
+      height: 720,
     },
   ],
 }));
@@ -62,7 +75,7 @@ function Gallery() {
       />
 
       <Lightbox
-        slides={photos}
+        slides={photosFull}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
