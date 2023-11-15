@@ -46,6 +46,7 @@ const allThumbnails = [...landscapePhotoThumbnails, ...portraitPhotoThumbnails]
 const sortedThumbnails = allThumbnails.sort(sortPhotos)
 
 const landscapePhotos = landscapeFilenames.map((ref) => ({
+  alt: ref,
   src: `https://images.fjallbark.se/wedding/thumbnails/landscape/${ref}`,
   width: 1080,
   height: 720,
@@ -64,6 +65,7 @@ const landscapePhotos = landscapeFilenames.map((ref) => ({
 }))
 
 const portraitPhotos = portraitFilenames.map((ref) => ({
+  alt: ref,
   src: `https://images.fjallbark.se/wedding/thumbnails/portrait/${ref}`,
   width: 720,
   height: 1080,
