@@ -32,6 +32,11 @@ const links: Array<Link> = [
     noscroll: true,
   },
   {
+    name: "selfie",
+    href: "/#selfiecircle",
+    noscroll: false,
+  },
+  {
     name: "mat & dryck",
     href: "/#mat",
     noscroll: false,
