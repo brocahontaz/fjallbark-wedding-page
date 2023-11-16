@@ -10,6 +10,7 @@ import Ceremony from "./Ceremony"
 import Quiz from "./Quiz"
 import Challenges from "./Challenges"
 import Gallery from "./Gallery"
+import SelfieCircle from "./SelfieCircle"
 
 function Main() {
   const location = useLocation()
@@ -18,6 +19,9 @@ function Main() {
       {(() => {
         if (location.hash === "#gallery") {
           return <Gallery />
+        }
+        if (location.hash === "#selfiecircle") {
+          return <SelfieCircle />
         }
         if (location.hash === "#utmaningar") {
           return <Challenges />
