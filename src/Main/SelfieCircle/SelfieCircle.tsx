@@ -8,6 +8,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import Download from "yet-another-react-lightbox/plugins/download"
 
 import "./SelfieCircle.css"
 import { filenames } from "./Files"
@@ -39,6 +40,7 @@ const photos = filenames.map((ref) => ({
   src: `https://images.fjallbark.se/selfiecircle/fullsize/${ref}`,
   width: 1080,
   height: 675,
+  downloadUrl: `https://images.fjallbark.se/selfiecircle/fullsize/${ref}`,
   srcSet: [
     {
       src: `https://images.fjallbark.se/selfiecircle/thumbnails/${ref}`,
@@ -76,7 +78,7 @@ function SelfieCircle() {
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom, Download]}
       />
     </div>
   )
