@@ -1,8 +1,9 @@
-import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import RingsWhite from "../assets/img/ringar-vit-square.png";
+import "./Footer.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import RingsWhite from "../assets/img/ringar-vit-square.png"
+import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
           <ul>
             <li>
               <a href="mailto:weddinguntz@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} size="1x" />
+                <FontAwesomeIcon icon={faEnvelope as IconProp} size="1x" />
                 <span>weddinguntz@gmail.com</span>
               </a>
             </li>
@@ -24,7 +25,7 @@ function Footer() {
           <ul>
             <li>
               <a href="https://www.github.com/brocahontaz/fjallbark">
-                <FontAwesomeIcon icon={faGithub} size="1x" />
+                <FontAwesomeIcon icon={faGithub as IconProp} size="1x" />
                 <span>
                   View <b>source code</b>
                 </span>
@@ -41,7 +42,7 @@ function Footer() {
         <span>Website developed by Catarina Fjällbark & Johan Fjällbark</span>
       </div>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

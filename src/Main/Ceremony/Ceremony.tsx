@@ -1,7 +1,6 @@
-/* eslint-disable max-len */
-import "./Ceremony.css";
-import ContentBlock from "../components/ContentBlock";
-import Church from "../../assets/img/vallkarrakyrka.jpeg";
+import "./Ceremony.css"
+import ContentBlock from "../components/ContentBlock"
+import Church from "../../assets/img/vallkarrakyrka.jpeg"
 
 function Ceremony() {
   return (
@@ -16,7 +15,7 @@ function Ceremony() {
         </p>
       </ContentBlock>
     </div>
-  );
+  )
 }
 
-export default Ceremony;
+export default Ceremony

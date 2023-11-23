@@ -1,5 +1,5 @@
-import "./Home.css";
-import Rings from "../../assets/img/ringarbakgrund.png";
+import "./Home.css"
+import Rings from "../../assets/img/ringarbakgrund.png"
 
 function Home() {
   return (
@@ -9,10 +9,10 @@ function Home() {
       </div>
       <div className="HomeWrap">
         <img src={Rings} alt="Rings" />
-        <div className="Banner">Tack till alla deltagare!</div>
+        <div className="Banner">TACK till alla deltagare!</div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
