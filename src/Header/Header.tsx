@@ -1,10 +1,16 @@
-import "./Header.css";
+import "./Header.css"
 
-import Navigation from "./Navigation";
-import NavigationBurger from "./NavigationBurger";
-import Logo from "./Logo";
+import Navigation from "./Navigation"
+import NavigationBurger from "./NavigationBurger"
+import Logo from "./Logo"
 
-const links = [
+export type Link = {
+  name: string
+  href: string
+  noscroll: boolean
+}
+
+const links: Array<Link> = [
   {
     name: "hem",
     href: "/#hem",
@@ -22,8 +28,13 @@ const links = [
   },
   {
     name: "foto",
-    href: "/gallery",
+    href: "/#gallery",
     noscroll: true,
+  },
+  {
+    name: "selfie",
+    href: "/#selfiecircle",
+    noscroll: false,
   },
   {
     name: "mat & dryck",
@@ -40,12 +51,12 @@ const links = [
     href: "/#crew",
     noscroll: false,
   },
-];
+]
 
 function Header() {
-  const half = Math.ceil(links.length / 2);
-  const firstHalf = links.slice(0, half);
-  const secondHalf = links.slice(half);
+  const half = Math.ceil(links.length / 2)
+  const firstHalf = links.slice(0, half)
+  const secondHalf = links.slice(half)
 
   return (
     <div className="Header">
@@ -56,7 +67,7 @@ function Header() {
         <NavigationBurger links={links} />
       </div>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header
