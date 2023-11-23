@@ -1,0 +1,21 @@
+.SelfieCircle {
+  width: 100%;
+  min-height: 800px;
+  box-sizing: border-box;
+  background: #fbf3fb;
+  position: relative;
+  padding: 20px;
+}
+
+.SelfieCircleWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.SelfieCircleWrap .subtitle {
+  text-align: center;
+}
+
+.SelfieCircleWrap h3:first-of-type {
+  margin-top: 50px;
+}

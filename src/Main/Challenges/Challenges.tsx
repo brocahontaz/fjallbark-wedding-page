@@ -1,19 +1,20 @@
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import ContentBlock from "../components/ContentBlock";
-import "./Challenges.css";
-import data from "./challenges.json";
+import { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faAngleRight } from "@fortawesome/free-solid-svg-icons"
+import ContentBlock from "../components/ContentBlock"
+import "./Challenges.css"
+import data from "./challenges.json"
+import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
 function Challenges() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(0)
   return (
     <div className="Challenges">
       <ContentBlock title="Utmana dig själv" subtitle="under bröllopsminglet">
         <p className="center-text">
           Skicka bildbevis på alla utförda utmaningar till{" "}
           <a href="mailto:weddinguntz@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} size="1x" />{" "}
+            <FontAwesomeIcon icon={faEnvelope as IconProp} size="1x" />{" "}
             weddinguntz@gmail.com
           </a>{" "}
           för att kunna vinna priser!
@@ -36,18 +37,18 @@ function Challenges() {
             type="button"
             onClick={() => {
               if (active + 1 < data.challenges.length) {
-                setActive(active + 1);
+                setActive(active + 1)
               } else {
-                setActive(0);
+                setActive(0)
               }
             }}
           >
-            <FontAwesomeIcon icon={faAngleRight} size="2x" />
+            <FontAwesomeIcon icon={faAngleRight as IconProp} size="2x" />
           </button>
         </div>
       </ContentBlock>
     </div>
-  );
+  )
 }
 
-export default Challenges;
+export default Challenges

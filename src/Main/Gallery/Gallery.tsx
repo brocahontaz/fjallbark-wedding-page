@@ -1,56 +1,103 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import PhotoAlbum, { Photo } from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import PhotoAlbum, { Photo } from "react-photo-album"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/thumbnails.css"
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import Download from "yet-another-react-lightbox/plugins/download"
 
-import "./Gallery.css";
-import { filenames } from "./Files";
+import "./Gallery.css"
+import { landscapeFilenames, portraitFilenames } from "./Files"
+import { sortPhotos } from "./utils"
 
-const photos = filenames.map((ref) => ({
-  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+const landscapePhotoThumbnails = landscapeFilenames.map((ref) => ({
+  alt: ref,
+  src: `https://images.fjallbark.se/wedding/thumbnails/landscape/${ref}`,
   width: 350,
   height: 233,
   srcSet: [
     {
-      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      src: `https://images.fjallbark.se/wedding/thumbnails/landscape/${ref}`,
       width: 350,
       height: 233,
     },
   ],
-}));
+}))
 
-const photosFull = filenames.map((ref) => ({
-  src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
-  width: 1080,
-  height: 720,
+const portraitPhotoThumbnails = portraitFilenames.map((ref) => ({
+  alt: ref,
+  src: `https://images.fjallbark.se/wedding/thumbnails/portrait/${ref}`,
+  width: 233,
+  height: 350,
   srcSet: [
     {
-      src: `http://images.fjallbark.se/wedding/thumbnails/${ref}`,
+      src: `https://images.fjallbark.se/wedding/thumbnails/portrait/${ref}`,
+      width: 233,
+      height: 350,
+    },
+  ],
+}))
+
+const allThumbnails = [...landscapePhotoThumbnails, ...portraitPhotoThumbnails]
+
+const sortedThumbnails = allThumbnails.sort(sortPhotos)
+
+const landscapePhotos = landscapeFilenames.map((ref) => ({
+  alt: ref,
+  src: `https://images.fjallbark.se/wedding/thumbnails/landscape/${ref}`,
+  width: 1080,
+  height: 720,
+  downloadUrl: `https://images.fjallbark.se/wedding/fullsize/landscape/${ref}`,
+  srcSet: [
+    {
+      src: `https://images.fjallbark.se/wedding/thumbnails/landscape/${ref}`,
       width: 350,
       height: 233,
     },
     {
-      src: `http://images.fjallbark.se/wedding/fullsize/${ref}`,
+      src: `https://images.fjallbark.se/wedding/fullsize/landscape/${ref}`,
       width: 1080,
       height: 720,
     },
   ],
-}));
+}))
+
+const portraitPhotos = portraitFilenames.map((ref) => ({
+  alt: ref,
+  src: `https://images.fjallbark.se/wedding/thumbnails/portrait/${ref}`,
+  width: 720,
+  height: 1080,
+  downloadUrl: `https://images.fjallbark.se/wedding/fullsize/portrait/${ref}`,
+  srcSet: [
+    {
+      src: `https://images.fjallbark.se/wedding/thumbnails/portrait/${ref}`,
+      width: 233,
+      height: 350,
+    },
+    {
+      src: `https://images.fjallbark.se/wedding/fullsize/portrait/${ref}`,
+      width: 720,
+      height: 1080,
+    },
+  ],
+}))
+
+const allPhotos = [...landscapePhotos, ...portraitPhotos]
+
+const sortedPhotos = allPhotos.sort(sortPhotos)
 
 function Gallery() {
-  const [index, setIndex] = useState(-1);
+  const [index, setIndex] = useState(-1)
 
   return (
     <div className="Gallery">
       <PhotoAlbum
         layout="masonry"
-        photos={photos as Photo[]}
+        photos={sortedThumbnails as Photo[]}
         onClick={({ index }) => setIndex(index)}
         renderPhoto={({ wrapperStyle, renderDefaultPhoto }) => (
           <a style={wrapperStyle} target="_blank" rel="noreferrer noopener">
@@ -60,15 +107,15 @@ function Gallery() {
       />
 
       <Lightbox
-        slides={photosFull}
+        slides={sortedPhotos}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
         // enable optional lightbox plugins
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom, Download]}
       />
     </div>
-  );
+  )
 }
 
-export default Gallery;
+export default Gallery

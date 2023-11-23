@@ -1,7 +1,15 @@
-import "./ContentBlock.css";
-import PropTypes from "prop-types";
+import { ReactNode } from "react"
+import "./ContentBlock.css"
+import PropTypes from "prop-types"
 
-function ContentBlock({ title, subtitle, image, children }) {
+type ContentBlockProps = {
+  title: string
+  subtitle: string
+  image: string
+  children: ReactNode
+}
+
+function ContentBlock({ title, subtitle, image, children }: ContentBlockProps) {
   return (
     <div className={`ContentBlock ${image ? "" : "flex"}`}>
       <div className="Content">
@@ -22,7 +30,7 @@ function ContentBlock({ title, subtitle, image, children }) {
         </div>
       )}
     </div>
-  );
+  )
 }
 
 ContentBlock.propTypes = {
@@ -30,13 +38,13 @@ ContentBlock.propTypes = {
   subtitle: PropTypes.string,
   image: PropTypes.string,
   children: PropTypes.node,
-};
+}
 
 ContentBlock.defaultProps = {
   title: "",
   subtitle: "",
   image: null,
   children: null,
-};
+}
 
-export default ContentBlock;
+export default ContentBlock

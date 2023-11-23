@@ -1,11 +1,15 @@
-import PropTypes from "prop-types";
-import { NavHashLink } from "react-router-hash-link";
-import { NavLink } from "react-router-dom";
-import scrollWithOffset from "../utilities/ScrollOffset";
+import PropTypes from "prop-types"
+import { NavHashLink } from "react-router-hash-link"
+import scrollWithOffset from "../utilities/ScrollOffset"
 
-import "./Navigation.css";
+import "./Navigation.css"
+import { Link } from "../Header"
 
-function Navigation({ links }) {
+type NavigationProps = {
+  links: Link[]
+}
+
+function Navigation({ links }: NavigationProps) {
   return (
     <div className="Navigation">
       {links.map((link) => {
@@ -15,30 +19,26 @@ function Navigation({ links }) {
               key={`nav-${link.name}`}
               smooth
               to={`${link.href}`}
-              className={({ isActive }) =>
-                `nav-link${isActive ? " selected" : ""}`
-              }
+              className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
               activeClassName="selected"
               scroll={(el) => scrollWithOffset(el)}
             >
               {link.name.toUpperCase()}
             </NavHashLink>
-          );
+          )
         }
         return (
-          <NavLink
+          <NavHashLink
             key={`nav-${link.name}`}
             to={`${link.href}`}
-            className={({ isActive }) =>
-              `nav-link${isActive ? " selected" : ""}`
-            }
+            className={(isActive) => `nav-link${isActive ? " selected" : ""}`}
           >
             {link.name.toUpperCase()}
-          </NavLink>
-        );
+          </NavHashLink>
+        )
       })}
     </div>
-  );
+  )
 }
 
 Navigation.propTypes = {
@@ -48,6 +48,6 @@ Navigation.propTypes = {
       href: PropTypes.string,
     })
   ).isRequired,
-};
+}
 
-export default Navigation;
+export default Navigation
